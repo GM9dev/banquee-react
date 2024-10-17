@@ -8,7 +8,14 @@ import Badge3Image from "./../../assets/badge-3.svg";
 import Badge2Image from "./../../assets/badge-2.svg";
 import "./SiteOneApp.css";
 
+// TODO: type to model template data
+// hint bonus: app-boxes are Array<{ title1: string; title2: string; desc: string }>
+// use map to loop throught the app-boxes template
+// google: react map array of objects
+
 function SiteOneApp() {
+  // TODO: variable for template data
+
   return (
     <div className="SiteOneApp banner-container-160">
       <div className="banner-content">
