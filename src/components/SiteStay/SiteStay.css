@@ -1,52 +1,52 @@
 .SiteStay.banner-container-160 {
-    padding: 160px 0;
+  padding: 160px 0;
 }
 
-.SiteStay .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
+.SiteStay .banner-content .block-5 {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .SiteStay .block-5 {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .SiteStay .section-1 {
-    margin: 0;
+  margin: 0;
 }
 
 .SiteStay .block-text {
-    width: 538.65px;
+  width: 538.65px;
 }
 
 .SiteStay .text-3 {
-    font-size: 17.96px;
-    font-weight: 500;
-    line-height: 180%;
+  font-size: 17.96px;
+  font-weight: 500;
+  line-height: 180%;
 }
 
 .SiteStay .list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    margin-bottom: 48px;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  gap: 12px;
 }
 
 .SiteStay .list-margin {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
 }
 
 .SiteStay .badge-2 {
-    margin-right: 16px;
-    margin-left: 0;
-    width: auto;
-    height: 26px;
+  margin-right: 16px;
+  margin-left: 0;
+  width: auto;
+  height: 26px;
 }
 
 .SiteStay .grid-2 {
-    margin-right: 0;
+  margin-right: 0;
 }

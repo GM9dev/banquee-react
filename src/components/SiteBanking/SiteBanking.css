@@ -1,97 +1,71 @@
 .SiteBanking.banner-container-128 {
-    padding: 128px 0;
+  padding: 128px 0;
 }
 
 .SiteBanking .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .SiteBanking .block-1 {
-    display: flex;
-    gap: 164px;
+  display: flex;
+  gap: 164px;
 }
 
 .SiteBanking .first-block {
-    width: 600px;
-    height: 545px;
-    margin: 16.86px 0;
+  width: 600px;
+  height: 545px;
+  margin: 16.86px 0;
 }
 
 .SiteBanking .banking-text {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    font-size: 100px;
-    line-height: 110%;
-    letter-spacing: -5px;
-    margin-bottom: 16px;
-    width: 535px;
-    margin-left: 0;
-}
-
-.SiteBanking .text-1 {
-    font-size: 24px;
-    line-height: 170%;
-    width: 600px;
-}
-
-.SiteBanking .distance-1 {
-    margin-bottom: 32px;
-}
-
-.SiteBanking .four-benefits {
-    display: flex;
-    margin-left: 0;
-    flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 110%;
+  letter-spacing: -5px;
+  margin-bottom: 16px;
+  width: 535px;
+  margin-left: 0;
 }
 
 .SiteBanking .ben {
-    display: flex;
-    align-items: center;
-    flex: 50%;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 180%;
+  display: flex;
+  align-items: center;
+  flex: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
 }
 
 .SiteBanking .badge {
-    margin-right: 16px;
-    margin-left: 0;
-    width: auto;
-    height: 26px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+  margin-right: 16px;
+  margin-left: 0;
+  width: auto;
+  height: 26px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .SiteBanking .green-button {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #5bb5a2;
-    border-radius: 6px;
-    padding: 16px 24px;
-    width: 165px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 0;
-}
-
-.SiteBanking .compare-cards {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    color: #5bb5a2;
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #5bb5a2;
+  border-radius: 6px;
+  padding: 16px 24px;
+  width: 165px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0;
 }
 
 .SiteBanking .distance-10 {
-    display: flex;
-    margin-top: 64px;
-    gap: 32px
+  display: flex;
+  margin-top: 64px;
+  gap: 32px;
 }
 
 .SiteBanking .vector3 {
-    margin-left: 8px;
+  margin-left: 8px;
 }

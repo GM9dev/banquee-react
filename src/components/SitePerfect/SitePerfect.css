@@ -1,69 +1,51 @@
 .SitePerfect.banner-container-160 {
-    padding: 160px 0;
+  padding: 160px 0;
 }
 
 .SitePerfect .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .SitePerfect .block-7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.SitePerfect .title-3 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -3px;
-    padding-top: 8px;
-}
-
-.SitePerfect .title-4 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -3px;
-    padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .SitePerfect .cards-three {
-    padding: 56px 0;
+  padding: 56px 0;
 }
 
 .SitePerfect .buttons {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .SitePerfect .green-button-2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #5bb5a2;
-    border-radius: 6px;
-    padding: 16px 24px;
-    width: 165px;
-    height: 50px;
-    box-sizing: border-box;
-    cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #5bb5a2;
+  border-radius: 6px;
+  padding: 16px 24px;
+  width: 165px;
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .SitePerfect .compare-cards-2 {
-    width: 175px;
-    height: 50px;
-    border-radius: 6px;
-    border: 1px solid #e8e8e8;
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 175px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

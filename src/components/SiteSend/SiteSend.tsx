@@ -8,7 +8,7 @@ function SiteSend() {
       <div className="banner-content2">
         <div className="block-3">
           <section>
-            <div className="first-block3">
+            <div id="first_block_3" className="first-block3">
               <div className="third-title">
                 Send & receive money instantly
                 <p className="text-2 distance-2">

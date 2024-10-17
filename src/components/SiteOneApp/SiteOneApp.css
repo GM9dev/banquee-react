@@ -1,77 +1,71 @@
 .SiteOneApp.banner-container-160 {
-    padding: 160px 0;
+  padding: 160px 0;
 }
 
 .SiteOneApp .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .SiteOneApp .block-2 {
-    display: flex;
-    gap: 124px;
+  display: flex;
+  gap: 124px;
 }
 
 .SiteOneApp .first-block2 {
-    margin-left: 0;
-    flex: 0 0 600px;
+  margin-left: 0;
+  flex: 0 0 600px;
 }
 
 .SiteOneApp .app-text {
-    font-family: "DM Sans", sans-serif;
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -3px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -3px;
 }
 
 .SiteOneApp .six-features {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 64px;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 32px;
 }
 
 .SiteOneApp .app-boxes {
-    flex: 284px;
-    border: solid #e8e8e8;
-    border-radius: 16px;
-    height: 264px;
-    padding: 32px 32px;
-    box-sizing: border-box;
+  flex: 284px;
+  border: solid #e8e8e8;
+  border-radius: 16px;
+  height: 264px;
+  padding: 32px 32px;
+  box-sizing: border-box;
 }
 
 .SiteOneApp .images {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
 }
 
 .SiteOneApp .app-titles {
-    font-family: "DM Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 120%;
-}
-
-.SiteOneApp .text-features {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 .SiteOneApp .distance-15 {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .SiteOneApp .app-image {
-    position: relative;
-    margin: 0;
-    flex: 1;
+  position: relative;
+  margin: 0;
+  flex: 1;
 }
 
 .SiteOneApp .card-image {
-    position: absolute;
-    left: 35px;
-    top: 100px;
+  position: absolute;
+  left: 35px;
+  top: 100px;
 }

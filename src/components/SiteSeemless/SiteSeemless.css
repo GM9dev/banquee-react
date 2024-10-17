@@ -1,66 +1,58 @@
 .SiteSeemless.banner-container-160 {
-    padding: 160px 0;
+  padding: 160px 0;
 }
 
 .SiteSeemless .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .SiteSeemless .image-grid {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .SiteSeemless .grid {
-    width: 722.33px;
+  width: 722.33px;
 }
 
 .SiteSeemless .block-6 {
-    display: flex;
-    gap: 163px;
+  display: flex;
+  gap: 163px;
 }
 
 .SiteSeemless .first-block-4 {
-    width: 538.65px;
-    margin-left: 0;
+  width: 538.65px;
+  margin-left: 0;
 }
 
 .SiteSeemless .padding-title-2 {
-    padding-top: 8px;
-    padding-bottom: 16px;
-}
-
-.SiteSeemless .title-2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 64px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -3px;
+  padding-top: 8px;
+  padding-bottom: 16px;
 }
 
 .SiteSeemless .second-block-4 {
-    display: flex;
-    align-items: flex-end;
-    margin-right: 0;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 0;
 }
 
 .SiteSeemless .list-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .SiteSeemless .list-margin-2 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 180%;
-    display: flex;
-    align-items: center;
-    margin-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
 }
 
 .SiteSeemless .badge-4 {
-    width: auto;
-    height: 40px;
-    margin-right: 16px;
+  width: auto;
+  height: 40px;
+  margin-right: 16px;
 }
