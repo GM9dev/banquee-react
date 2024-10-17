@@ -1,0 +1,80 @@
+.SiteNeed.banner-container-160 {
+    padding: 160px 0;
+}
+
+.SiteNeed .banner-content * {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.SiteNeed .block-11 {
+    display: flex;
+}
+
+.SiteNeed .block-12 {
+    flex: 1;
+}
+
+.SiteNeed .div {
+    margin: 48px 0;
+}
+
+.SiteNeed .position-txt-2 {
+    display: flex;
+}
+
+.SiteNeed .size-img {
+    height: 50px;
+    width: auto;
+    margin: 0 24px 0 0;
+}
+
+.SiteNeed .size-7 {
+    margin: 0;
+}
+
+.SiteNeed .compare-cards-3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: #5bb5a2;
+    display: flex;
+    cursor: pointer;
+}
+
+.SiteNeed .distance-8 {
+    display: flex;
+}
+
+.SiteNeed .border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.SiteNeed .info-2 {
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.SiteNeed .add-img {
+    height: 24px;
+    width: auto;
+    margin-right: 0;
+}
+
+.SiteNeed .padding-3 {
+    padding-top: 32px;
+}
+
+.SiteNeed .info-3 {
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.SiteNeed .text-6 {
+    color: #1A191E;
+    opacity: 50%;
+    padding-bottom: 32px;
+}
+
+.SiteNeed .info-4 {
+    margin: 0;
+}

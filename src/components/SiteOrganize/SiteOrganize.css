@@ -1,0 +1,79 @@
+.SiteOrganize.banner-container-160 {
+    padding: 160px 0;
+}
+
+.SiteOrganize .banner-content * {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.SiteOrganize .block-4 {
+    display: flex;
+    flex: 1;
+    margin-bottom: 64px;
+}
+
+.SiteOrganize .block-one {
+    width: 600px;
+    margin: 0 0;
+}
+
+.SiteOrganize .info {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.SiteOrganize .title-1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -3px;
+}
+
+.SiteOrganize .distance-3 {
+    padding: 16px 0;
+}
+
+.SiteOrganize .block-two {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.SiteOrganize .all-features {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    align-items: center;
+    color: #5bb5a2;
+    margin: 0;
+}
+
+.SiteOrganize .items {
+    gap: 33px;
+    display: flex;
+    flex-direction: row;
+}
+
+.SiteOrganize .text-image {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.SiteOrganize .money {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #1A191E;
+    opacity: 50%;
+}

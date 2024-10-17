@@ -1,0 +1,55 @@
+.SiteOneApp2.banner-container-0 {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.SiteOneApp2 .background-green-2 {
+    background-color: #5BB5A2;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 96px 0 96px 76px;
+    display: flex;
+    gap: 108px;
+}
+
+.SiteOneApp2 .block-10 {
+    width: 524px;
+}
+
+.SiteOneApp2 .app-text-2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -3px;
+    padding-right: 179px;
+}
+
+.SiteOneApp2 .color {
+    color: #ffffff;
+    margin-bottom: 48px;
+}
+
+.SiteOneApp2 .ben-2 {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+.SiteOneApp2 .distance-7 {
+    margin-bottom: 16px;
+}
+
+.SiteOneApp2 .text-5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0;
+    margin: 16px 27px 32px 0;
+}
+
+.SiteOneApp2 .app-4 {
+    position: absolute;
+    top: 17px;
+}

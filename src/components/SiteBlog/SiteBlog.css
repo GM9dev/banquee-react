@@ -1,0 +1,46 @@
+.SiteBlog.banner-container-160 {
+    padding: 160px 0;
+}
+
+.SiteBlog .banner-content * {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.SiteBlog .block-13 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.SiteBlog .distance-9 {
+    margin: 0;
+}
+
+.SiteBlog .images-2 {
+    display: flex;
+    gap: 33px;
+}
+
+.SiteBlog .distance-11 {
+    margin-bottom: 24px;
+}
+
+.SiteBlog .distance-12 {
+    margin: 8px 0 24px 0;
+    padding-right: 18px;
+}
+
+.SiteBlog .block-14 {
+    display: flex;
+    gap: 8px;
+}
+
+.SiteBlog .font {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 180%;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin: 0;
+}
