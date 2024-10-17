@@ -1,5 +1,3 @@
-import BaseButton from "./components/BaseButton/BaseButton";
-
 import "./App.css";
 import SiteMenu from "./components/SiteMenu/SiteMenu";
 import SiteBanking from "./components/SiteBanking/SiteBanking";
@@ -18,19 +16,19 @@ import SiteFooter from "./components/SiteFooter/SiteFooter";
 function App() {
   return (
     <div className="App">
-      <SiteMenu/>
-      <SiteBanking/>
-      <SiteOneApp/>
-      <SiteSend/>
-      <SiteOrganize/>
-      <SiteStay/>
-      <SiteSeemless/>
-      <SitePerfect/>
-      <SitePeople/>
-      <SiteOneApp2/>
-      <SiteNeed/>
-      <SiteBlog/>
-      <SiteFooter/>
+      <SiteMenu />
+      <SiteBanking />
+      <SiteOneApp />
+      <SiteSend />
+      <SiteOrganize />
+      <SiteStay />
+      <SiteSeemless />
+      <SitePerfect />
+      <SitePeople />
+      <SiteOneApp2 />
+      <SiteNeed />
+      <SiteBlog />
+      <SiteFooter />
     </div>
   );
 }
