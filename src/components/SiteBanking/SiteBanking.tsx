@@ -3,39 +3,50 @@ import Vector3 from "./../../assets/Vector-3.svg";
 import BadgeImage from "./../../assets/badge.svg";
 import "./SiteBanking.css";
 
+type SiteBankingData = {
+  mainTitle: string;
+  description: string;
+  listBenefits: Array<string>;
+  mainButtonText: string;
+  secondButtonText: string;
+};
+
 function SiteBanking() {
+  const templateData: SiteBankingData = {
+    mainTitle: "Banking starts here.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    listBenefits: [
+      "Instant Transfer",
+      "Payments worldwide",
+      "Saving accounts",
+      "100% mobile banking",
+    ],
+    mainButtonText: "Open Account",
+    secondButtonText: "Compare Cards",
+  };
+
   return (
     <div className="SiteBanking banner-container-128">
       <div className="banner-content">
         <div className="block-1">
           <section className="first-block">
-            <h1 className="banking-text">Banking starts here.</h1>
-            <p className="text-1 distance-1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
-            </p>
+            <h1 className="banking-text">{templateData.mainTitle}</h1>
+            <p className="text-1 distance-1">{templateData.description}</p>
             <div className="four-benefits">
-              <div className="ben">
-                <img className="badge" src={BadgeImage} />
-                Instant Transfer
-              </div>
-              <div className="ben">
-                <img className="badge" src={BadgeImage} />
-                Payments worldwide
-              </div>
-              <div className="ben">
-                <img className="badge" src={BadgeImage} />
-                Saving accounts
-              </div>
-              <div className="ben">
-                <img className="badge" src={BadgeImage} />
-                100% mobile banking
-              </div>
+              {templateData.listBenefits.map((itemBenefit) => {
+                return (
+                  <div className="ben">
+                    <img className="badge" src={BadgeImage} />
+                    {itemBenefit}
+                  </div>
+                );
+              })}
             </div>
             <div className="distance-10">
-              <div className="green-button">Open Account</div>
+              <div className="green-button">{templateData.mainButtonText}</div>
               <div className="compare-cards">
-                Compare Cards
+                {templateData.secondButtonText}
                 <img className="vector3" src={Vector3} />
               </div>
             </div>
