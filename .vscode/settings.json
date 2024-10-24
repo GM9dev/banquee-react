@@ -1,0 +1,35 @@
+{
+  "[typescriptreact][typescript][javascript][javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true
+  },
+  "[json][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true
+  },
+  "typescript.validate.enable": true,
+  "editor.formatOnSave": true,
+  "editor.indentSize": 2,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.insertSpaces": true,
+  "editor.fontFamily": "JetBrains Mono Medium",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
+  "files.exclude": {
+    "**/.git": false,
+    "**/node_modules": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "search.useIgnoreFiles": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+}
