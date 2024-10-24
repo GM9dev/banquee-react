@@ -1,32 +1,32 @@
-.SiteBanking.banner-container-128 {
-  padding: 128px 0;
-}
-
-.SiteBanking .banner-content * {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .SiteBanking .block-1 {
   display: flex;
   gap: 164px;
+  height: 577.72px;
 }
 
 .SiteBanking .first-block {
-  width: 600px;
-  height: 545px;
   margin: 16.86px 0;
 }
 
-.SiteBanking .banking-text {
+.SiteBanking .banking-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 100px;
   line-height: 110%;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   margin-bottom: 16px;
-  width: 535px;
-  margin-left: 0;
+  padding-right: 45px;
+}
+
+.SiteBanking .block-1 .text-1 {
+  padding-right: 2px;
+  margin-bottom: 32px;
+}
+
+.SiteBanking .four-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 489px;
 }
 
 .SiteBanking .ben {
@@ -36,15 +36,13 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 180%;
+  margin-bottom: 16px;
 }
 
-.SiteBanking .badge {
-  margin-right: 16px;
-  margin-left: 0;
-  width: auto;
-  height: 26px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+.SiteBanking .block-button {
+  display: flex;
+  margin-top: 48px;
+  gap: 32px;
 }
 
 .SiteBanking .green-button {
@@ -57,15 +55,10 @@
   width: 165px;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 0;
 }
 
-.SiteBanking .distance-10 {
-  display: flex;
-  margin-top: 64px;
-  gap: 32px;
+.SiteBanking .size-9 {
+  width: 399.7px;
+  height: 577.72px;
 }
 
-.SiteBanking .vector3 {
-  margin-left: 8px;
-}

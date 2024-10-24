@@ -1,28 +1,19 @@
-.SiteOneApp.banner-container-160 {
-  padding: 160px 0;
-}
-
-.SiteOneApp .banner-content * {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .SiteOneApp .block-2 {
   display: flex;
   gap: 124px;
 }
 
-.SiteOneApp .first-block2 {
-  margin-left: 0;
+.SiteOneApp .first-block-3 {
   flex: 0 0 600px;
 }
 
-.SiteOneApp .app-text {
+.SiteOneApp .app-title {
   font-family: "DM Sans", sans-serif;
   font-size: 80px;
   font-weight: 500;
   line-height: 110%;
   letter-spacing: -3px;
+  padding-right: 134px;
 }
 
 .SiteOneApp .six-features {
@@ -36,7 +27,6 @@
   flex: 284px;
   border: solid #e8e8e8;
   border-radius: 16px;
-  height: 264px;
   padding: 32px 32px;
   box-sizing: border-box;
 }
@@ -52,15 +42,16 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
+  padding-right: 104px;
 }
 
-.SiteOneApp .distance-15 {
+.SiteOneApp .block-2 .text-features {
   margin-top: 8px;
+  letter-spacing: -1px;
 }
 
 .SiteOneApp .app-image {
   position: relative;
-  margin: 0;
   flex: 1;
 }
 

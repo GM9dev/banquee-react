@@ -8,21 +8,21 @@ function SiteBlog() {
   return (
     <div className="SiteBlog banner-container-160">
       <div className="banner-content">
-        <div className="blocks">
+        <div>
           <section className="block-13">
-            <div className="app-text distance-9">Blog</div>
+            <div className="title-1">Blog</div>
             <div className="all-features">
               All Articles
-              <img className="vector3" src={Vector3Image} />
+              <img className="vector-3" src={Vector3Image} />
             </div>
           </section>
           <section className="images-2">
             <div>
-              <img className="distance-11" src={ImageImage} />
-              <div className="title-5">
+              <img className="distance-5" src={ImageImage} />
+              <div className="title-3">
                 How To Start Using Banko For Your Startup
               </div>
-              <div className="text-features distance-12">
+              <div className="text-features distance-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
                 accumsan sit amet nulla facilisi morbi.
@@ -33,11 +33,11 @@ function SiteBlog() {
               </div>
             </div>
             <div>
-              <img className="distance-11" src={Image2Image} />
-              <div className="title-5">
+              <img className="distance-5" src={Image2Image} />
+              <div className="title-3">
                 10 Things Nobody Told You About Banko
               </div>
-              <div className="text-features distance-12">
+              <div className="text-features distance-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
                 accumsan sit amet nulla facilisi morbi.
@@ -48,9 +48,9 @@ function SiteBlog() {
               </div>
             </div>
             <div>
-              <img className="distance-11" src={Image3Image} />
-              <div className="title-5">7 Ways To Improve You Saving Habits</div>
-              <div className="text-features distance-12">
+              <img className="distance-5" src={Image3Image} />
+              <div className="title-3">7 Ways To Improve You Saving Habits</div>
+              <div className="text-features distance-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
                 accumsan sit amet nulla facilisi morbi.

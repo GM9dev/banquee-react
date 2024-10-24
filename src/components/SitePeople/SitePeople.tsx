@@ -2,20 +2,29 @@ import RatingImage from "./../../assets/rating.svg";
 import Badge9Image from "./../../assets/badge-9.svg";
 import "./SitePeople.css";
 
+type SitePeopleData = {
+  subTitle: string;
+  mainTitle: string;
+  info: string;
+}
+
 function SitePeople() {
+  const templateData: SitePeopleData = {
+    subTitle: "Testimonials",
+    mainTitle: "People all over the world use banko.",
+    info: "Rated 4.8/5 from over 1000 users",
+  };
   return (
     <div className="SitePeople banner-container-160">
       <div className="banner-content banner-size">
         <div className="block-8">
-          <section className="margin">
-            <div className="info">Testimonials</div>
-            <div className="title-1 break-line distance-4">
-              People all over the world use banko.
-            </div>
+          <section>
+            <div className="info">{templateData.subTitle}</div>
+            <div className="title-1">{templateData.mainTitle}</div>
           </section>
           <section className="position-txt">
             <div className="rate">
-              <img className="distance-5" src={Badge9Image} />
+              <img className="distance-2" src={Badge9Image} />
               Rated <div className="green">4.8/5</div> from over 1000 users
             </div>
           </section>
@@ -23,10 +32,10 @@ function SitePeople() {
         <div className="block-9">
           <div className="size size-1">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">
+            <div className="title-3">
               Sunt qui esse pariatur duis deserunt mollit
             </div>
-            <div className="distance-6">
+            <div className="distance-3">
               <div className="text-features">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor. Voluptate exercitation incididunt aliquip
@@ -38,8 +47,8 @@ function SitePeople() {
           </div>
           <div className="size size-2">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">At lectus urna duis convallis tellus</div>
-            <div className="distance-6 padding-2">
+            <div className="title-3">At lectus urna duis convallis tellus</div>
+            <div className="distance-3">
               <div className="text-features">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
@@ -55,10 +64,10 @@ function SitePeople() {
           </div>
           <div className="size size-3">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">
+            <div className="title-3">
               Elit aute irure tempor cupidatat incididunt
             </div>
-            <div className="distance-6">
+            <div className="distance-3">
               <div className="text-features">
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim
@@ -71,10 +80,10 @@ function SitePeople() {
           </div>
           <div className="size size-4">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">
+            <div className="title-3">
               Sunt qui esse pariatur duis deserunt mollit
             </div>
-            <div className="distance-6">
+            <div className="distance-3">
               <div className="text-features">
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim
@@ -87,8 +96,8 @@ function SitePeople() {
           </div>
           <div className="size size-5">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">Donec et fringilla neque</div>
-            <div className="distance-6">
+            <div className="title-3">Donec et fringilla neque</div>
+            <div className="distance-3">
               <div className="text-features">
                 Etiam accumsan porta neque in viverra. Proin eleifend, eros in
                 tristique hendrerit, nisi purus cursus sapien, id ultrices nunc
@@ -101,8 +110,8 @@ function SitePeople() {
           </div>
           <div className="size size-6">
             <img className="rating" src={RatingImage} />
-            <div className="title-5">Etiam accumsan porta neque eros</div>
-            <div className="distance-6">
+            <div className="title-3">Etiam accumsan porta neque eros</div>
+            <div className="distance-3">
               <div className="text-features">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor. Voluptate exercitation incididunt aliquip

@@ -6,7 +6,7 @@ function SiteMenu() {
   <div className="nav-left">banquee.</div>
   <div className="nav-center-container">
     <div className="nav-center">Features</div>
-    <div className="nav-center nav-center2">
+    <div className="nav-center">
       Compare
       <img className="Vector" src={VectorImage} />
     </div>

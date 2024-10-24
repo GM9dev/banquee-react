@@ -8,14 +8,7 @@
     padding: 24px 0;
 }
 
-.SiteMenu.email-menu .nav-left {
-    font-family: "DM Sans", sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #5bb5a2;
-}
-
-.SiteMenu .nav-center-container {
+.SiteMenu.email-menu .nav-center-container {
     display: flex;
     gap: 16px;
     flex: 1;
@@ -28,9 +21,13 @@
     padding: 8px 8px 8px 12px;
 }
 
-.SiteMenu .nav-center2 {
+.SiteMenu.email-menu .nav-center:nth-child(2) {
     background-color: #f8f8f8;
     border-radius: 6px;
+}
+
+.SiteMenu.email-menu .vector {
+    margin-left: 7.76px;
 }
 
 .SiteMenu.email-menu .nav-right1 {
@@ -47,8 +44,4 @@
     background-color: #5bb5a2;
     border-radius: 6px;
     padding: 12px 16px 12px 16px;
-}
-
-.SiteMenu .vector {
-    margin-left: 7.76px;
 }

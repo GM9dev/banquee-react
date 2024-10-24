@@ -1,36 +1,21 @@
-.SitePeople.banner-container-160 {
-    padding: 160px 0;
-}
-
-.SitePeople .banner-content * {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.SitePeople .banner-size {
+.SitePeople .banner-content.banner-size {
     height: 1122px;
 }
 
 .SitePeople .block-8 {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 64px;
 }
 
-.SitePeople .margin {
-    margin: 0;
-}
-
-.SitePeople .break-line,
-.SitePeople .distance-4 {
+.SitePeople .block-8 .title-1 {
     width: 600px;
-    height: 140px;
     padding-top: 16px;
 }
 
 .SitePeople .position-txt {
     display: flex;
     align-items: flex-end;
-    margin-right: 0;
 }
 
 .SitePeople .rate {
@@ -41,15 +26,10 @@
     line-height: 180%;
 }
 
-.SitePeople .distance-5 {
+.SitePeople .distance-2 {
     margin-right: 16px;
     height: 40px;
     width: auto;
-}
-
-.SitePeople .green {
-    color: #5bb5a2;
-    margin: 0 4px;
 }
 
 .SitePeople .block-9 {
@@ -57,6 +37,11 @@
     flex-wrap: wrap;
     gap: 32px;
 }
+
+.SitePeople .block-9 .text-features {
+    font-size: 16px;
+    line-height: 160%;
+  }
 
 .SitePeople .size {
     width: 378.67px;
@@ -66,32 +51,32 @@
     box-sizing: border-box;
 }
 
-.SitePeople .size-1 {
+.SitePeople .size.size-1 {
     height: 373px;
 }
 
-.SitePeople .size-2 {
+.SitePeople .size.size-2 {
     height: 477px;
 }
 
-.SitePeople .size-3 {
+.SitePeople .size.size-3 {
     height: 399px;
 }
 
-.SitePeople .size-4 {
+.SitePeople .size.size-4 {
     height: 399px;
     position: absolute;
     top: 405px;
 }
 
-.SitePeople .size-5 {
+.SitePeople .size.size-5 {
     height: 369px;
     position: absolute;
     top: 509px;
     left: 411px;
 }
 
-.SitePeople .size-6 {
+.SitePeople .size.size-6 {
     height: 377px;
     position: absolute;
     top: 431px;
@@ -104,25 +89,6 @@
     margin-bottom: 8px;
 }
 
-.SitePeople .title-5 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 120%;
-}
-
-.SitePeople .distance-6 {
+.SitePeople .distance-3 {
     margin: 16px 0 24px 0;
-    padding-right: 9px;
-}
-
-.SitePeople .padding-2 {
-    padding-right: 13px;
-}
-
-.SitePeople .name {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 140%;
 }

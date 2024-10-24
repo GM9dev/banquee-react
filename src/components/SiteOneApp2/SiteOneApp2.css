@@ -1,22 +1,15 @@
-.SiteOneApp2.banner-container-0 {
+.SiteOneApp2.banner-container {
   background-color: #ffffff;
   overflow: hidden;
 }
 
-.SiteOneApp2 .background-green-2 {
+.SiteOneApp2.banner-container .banner-content {
   background-color: #5bb5a2;
-  max-width: 1200px;
-  margin: 0 auto;
   border-radius: 20px;
   padding: 96px 0 96px 76px;
   display: flex;
   gap: 108px;
-}
-
-.SiteOneApp2 .four-benefits {
-  display: flex;
-  margin-left: 0;
-  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .SiteOneApp2 .block-10 {
@@ -30,33 +23,41 @@
   line-height: 110%;
   letter-spacing: -3px;
   padding-right: 179px;
-}
-
-.SiteOneApp2 .color {
   color: #ffffff;
-  margin-bottom: 48px;
 }
 
-.SiteOneApp2 .ben-2 {
-  display: flex;
-  align-items: center;
-  flex: 50%;
-  gap: 16px;
-}
-
-.SiteOneApp2 .distance-7 {
-  margin-bottom: 16px;
-}
-
-.SiteOneApp2 .text-5 {
+.SiteOneApp2 .text-4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 180%;
   letter-spacing: 0;
-  margin: 16px 27px 32px 0;
+  margin: 16px 11px 32px 0;
+  color: #ffffff;
 }
 
-.SiteOneApp2 .app-4 {
+.SiteOneApp2 .block-10 .four-benefits {
+  width: 464px;
+  color: #ffffff;
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.SiteOneApp2 .block-10 .text-features {
+  display: flex;
+  align-items: center;
+  flex: 50%;
+}
+
+.SiteOneApp2 .block-10 .text-features:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.SiteOneApp2 .block-10 .text-features:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.SiteOneApp2 .app {
   position: absolute;
-  top: 17px;
+  top: 19px;
 }

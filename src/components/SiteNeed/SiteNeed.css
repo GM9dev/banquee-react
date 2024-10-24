@@ -1,12 +1,3 @@
-.SiteNeed.banner-container-160 {
-  padding: 160px 0;
-}
-
-.SiteNeed .banner-content .block-11 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .SiteNeed .block-11 {
   display: flex;
 }
@@ -15,8 +6,8 @@
   flex: 1;
 }
 
-.SiteNeed .div {
-  margin: 48px 0;
+.SiteNeed .block-12 .title-1 {
+  margin-bottom: 48px;
 }
 
 .SiteNeed .position-txt-2 {
@@ -24,13 +15,14 @@
 }
 
 .SiteNeed .size-img {
-  height: 50px;
-  width: auto;
+  height: 50px; 
   margin: 0 24px 0 0;
 }
 
 .SiteNeed .size-7 {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .SiteNeed .compare-cards-3 {
@@ -39,10 +31,10 @@
   color: #5bb5a2;
   display: flex;
   cursor: pointer;
-  gap: 16px;
+  margin-top: 48px;
 }
 
-.SiteNeed .distance-8 {
+.SiteNeed .distance-4 {
   display: flex;
   justify-content: space-between;
 }
@@ -51,32 +43,21 @@
   border-bottom: 1px solid #e8e8e8;
 }
 
-.SiteNeed .info-2 {
-  margin: 0;
-  padding-bottom: 32px;
-}
-
 .SiteNeed .add-img {
   height: 24px;
   width: auto;
-  margin-right: 0;
 }
 
-.SiteNeed .padding-3 {
+.SiteNeed .padding {
   padding-top: 32px;
 }
 
 .SiteNeed .info-3 {
-  margin: 0;
   padding-bottom: 16px;
 }
 
-.SiteNeed .text-6 {
+.SiteNeed .text-5 {
   color: #1a191e;
   opacity: 50%;
   padding-bottom: 32px;
-}
-
-.SiteNeed .info-4 {
-  margin: 0;
 }

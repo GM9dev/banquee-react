@@ -14,44 +14,44 @@
     margin-bottom: 16px;
 }
 
+.SiteFooter .block-15 .nav-left {
+    margin-right: 300px;
+}
+
 .SiteFooter .block-16 {
     display: flex;
     gap: 48px;
-}
-
-.SiteFooter .block-17 {
-    display: flex;
 }
 
 .SiteFooter .size-8 {
     width: 205.25px;
 }
 
-.SiteFooter .distance-13 {
-    margin-right: 300px;
-}
-
-.SiteFooter .color-2 {
+.SiteFooter .color {
     color: #1A191E;
     opacity: 50%;
 }
 
-.SiteFooter .distance-14 {
+.SiteFooter .distance-7 {
     margin: 16px 0;
 }
 
-.SiteFooter .text-7 {
+.SiteFooter .block-17 {
+    display: flex;
+}
+
+.SiteFooter .text-6 {
     font-size: 14px;
     font-weight: 500;
     line-height: 160%;
     display: flex;
 }
 
-.SiteFooter .distance-16 {
+.SiteFooter .distance-8 {
     display: flex;
-    margin-left: 929px;
+    margin-left: 898px;
 }
 
-.SiteFooter .distance-17 {
+.SiteFooter .distance-9 {
     margin-right: 32px;
 }

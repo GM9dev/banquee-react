@@ -1,23 +1,18 @@
-.SiteStay.banner-container-160 {
-  padding: 160px 0;
-}
-
-.SiteStay .banner-content .block-5 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .SiteStay .block-5 {
   display: flex;
   justify-content: space-between;
 }
 
 .SiteStay .section-1 {
-  margin: 0;
+  margin-top: 26.92px;
 }
 
 .SiteStay .block-text {
   width: 538.65px;
+}
+
+.SiteStay .block-5 .title-1 {
+  padding: 16px 0;
 }
 
 .SiteStay .text-3 {
@@ -37,16 +32,10 @@
 .SiteStay .list-margin {
   display: flex;
   align-items: center;
-  margin-left: 0;
 }
 
 .SiteStay .badge-2 {
   margin-right: 16px;
-  margin-left: 0;
   width: auto;
   height: 26px;
-}
-
-.SiteStay .grid-2 {
-  margin-right: 0;
 }

@@ -31,8 +31,8 @@ function SiteBanking() {
       <div className="banner-content">
         <div className="block-1">
           <section className="first-block">
-            <h1 className="banking-text">{templateData.mainTitle}</h1>
-            <p className="text-1 distance-1">{templateData.description}</p>
+            <h1 className="banking-title">{templateData.mainTitle}</h1>
+            <p className="text-1">{templateData.description}</p>
             <div className="four-benefits">
               {templateData.listBenefits.map((itemBenefit) => {
                 return (
@@ -43,16 +43,16 @@ function SiteBanking() {
                 );
               })}
             </div>
-            <div className="distance-10">
+            <div className="block-button">
               <div className="green-button">{templateData.mainButtonText}</div>
               <div className="compare-cards">
                 {templateData.secondButtonText}
-                <img className="vector3" src={Vector3} />
+                <img className="vector-3" src={Vector3} />
               </div>
             </div>
           </section>
           <section>
-            <img src={Cards} />
+            <img className="size-" src={Cards} />
           </section>
         </div>
       </div>
