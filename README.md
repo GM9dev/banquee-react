@@ -84,16 +84,16 @@
 // estrutura de dados para representar um usuario
 // o usuario deve ter nome, idade, dados adicionais e dentro dos dados adicionais armazenar varios telefones
 
-```
+```typescript
 type InfractionType = {
   desc: string;
   date: string;
-}
+};
 
 type CarsType = {
   nome: string;
   multas: InfractionType[];
-}
+};
 
 type Cliente = {
   nome: string;
@@ -104,31 +104,36 @@ type Cliente = {
   };
   emails: string[];
   carros: CarsType[];
-}
+};
 
 const cliente1: Cliente = {
   nome: "Gesse",
   idade: 30,
   dados: {
     cargo: "Programador",
-    tel: [111111, 22222, 33333]
+    tel: [111111, 22222, 33333],
   },
   emails: ["", ""],
   carros: [
     {
-      nome: "Fiat Uno", multas: [
-        {date: "2024-05-01", desc: "Colocou em area proibida para estacionar"},
-        {date: "2024-05-06", desc: "Colocou em area proibida para estacionar de novo"},
-      ]
+      nome: "Fiat Uno",
+      multas: [
+        {
+          date: "2024-05-01",
+          desc: "Colocou em area proibida para estacionar",
+        },
+        {
+          date: "2024-05-06",
+          desc: "Colocou em area proibida para estacionar de novo",
+        },
+      ],
     },
     {
-      nome: "Fusca", multas: [
-        {date: "2023-10-14", desc: "Ultrapassou em faixa continua"}
-      ]
+      nome: "Fusca",
+      multas: [{ date: "2023-10-14", desc: "Ultrapassou em faixa continua" }],
     },
-  ]
-}
+  ],
+};
 
-console.log(    cliente1.carros[0].multas.length      );
-
+console.log(cliente1.carros[0].multas.length);
 ```
