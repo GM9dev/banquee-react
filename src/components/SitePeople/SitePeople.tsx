@@ -23,7 +23,7 @@ function SitePeople() {
       },
       {
         title: "At lectus urna duis convallis tellus",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. In nibh mauris cursus mattis. At lectus urna duis convallis convallis tellus. Enim blandit volutpat maecenas volutpat.",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. <br /> <br /> In nibh mauris cursus mattis. At lectus urna duis convallis convallis tellus. Enim blandit volutpat maecenas volutpat.",
         name: "Jenny Wilson",
         job: "Nursing Assistant",
       },
@@ -69,68 +69,22 @@ function SitePeople() {
           </section>
         </div>
         <div className="block-9">
-          <div className="size size-1">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[0].title}</div>
-            <div className="distance-3">
-              <div className="text-features">{templateData.boxes[0].text}</div>
-            </div>
-            <div className="name">{templateData.boxes[0].name}</div>
-            <div className="money">{templateData.boxes[0].job}</div>
-          </div>
-          <div className="size size-2">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[1].title}</div>
-            <div className="distance-3">
-              <div className="text-features">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
-                accumsan sit amet nulla facilisi morbi.
-                <br />
-                <br />
-                In nibh mauris cursus mattis. At lectus urna duis convallis
-                convallis tellus. Enim blandit volutpat maecenas volutpat.
+          {templateData.boxes.map((item, index) => {
+            return (
+              <div className={`size size-${index + 1}`}>
+                <img className="rating" src={RatingImage} />
+                <div className="title-3">{item.title}</div>
+                <div className="distance-3">
+                  <div
+                    className="text-features"
+                    dangerouslySetInnerHTML={{ __html: item.text }}
+                  />
+                </div>
+                <div className="name">{item.name}</div>
+                <div className="money">{item.job}</div>
               </div>
-            </div>
-            <div className="name">{templateData.boxes[1].name}</div>
-            <div className="money">{templateData.boxes[1].job}</div>
-          </div>
-          <div className="size size-3">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[2].title}</div>
-            <div className="distance-3">
-              <div className="text-features">{templateData.boxes[2].text}</div>
-            </div>
-            <div className="name">{templateData.boxes[2].name}</div>
-            <div className="money">{templateData.boxes[2].job}</div>
-          </div>
-          <div className="size size-4">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[3].title}</div>
-            <div className="distance-3">
-              <div className="text-features">{templateData.boxes[3].text}</div>
-            </div>
-            <div className="name">{templateData.boxes[3].name}</div>
-            <div className="money">{templateData.boxes[3].job}</div>
-          </div>
-          <div className="size size-5">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[4].title}</div>
-            <div className="distance-3">
-              <div className="text-features">{templateData.boxes[4].text}</div>
-            </div>
-            <div className="name">{templateData.boxes[4].name}</div>
-            <div className="money">{templateData.boxes[4].job}</div>
-          </div>
-          <div className="size size-6">
-            <img className="rating" src={RatingImage} />
-            <div className="title-3">{templateData.boxes[5].title}</div>
-            <div className="distance-3">
-              <div className="text-features">{templateData.boxes[5].text}</div>
-            </div>
-            <div className="name">{templateData.boxes[5].name}</div>
-            <div className="money">{templateData.boxes[5].job}</div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>

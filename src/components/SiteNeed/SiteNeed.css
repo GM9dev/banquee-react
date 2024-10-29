@@ -15,7 +15,7 @@
 }
 
 .SiteNeed .size-img {
-  height: 50px; 
+  height: 50px;
   margin: 0 24px 0 0;
 }
 
@@ -35,6 +35,12 @@
 }
 
 .SiteNeed .distance-4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.SiteNeed .item-header {
   display: flex;
   justify-content: space-between;
 }
@@ -59,5 +65,4 @@
 .SiteNeed .text-5 {
   color: #1a191e;
   opacity: 50%;
-  padding-bottom: 32px;
 }
