@@ -137,3 +137,70 @@ const cliente1: Cliente = {
 
 console.log(cliente1.carros[0].multas.length);
 ```
+
+### Estruturas de controle e repetição
+
+```typescript
+// https://www.typescriptlang.org/play/
+
+// Estrutura de controle
+// Estrutura de repetição
+
+// if / else
+
+let value = 7;
+
+if (value > 20) {
+  console.log("Valor maior que 10");
+} else if (value > 10 && value < 20) {
+  console.log("Valor entre 11 e 19");
+} else if (value > 5 && value < 11) {
+  console.log("Valor entre 6 e 10");
+} else {
+  console.log("Valor menor que 10");
+}
+
+let userName: string;
+
+userName = "Gesse";
+
+switch (userName) {
+  case "Gio":
+    console.log("User name Gio");
+    break;
+  case "Gesse":
+    console.log("User name Gesse");
+    break;
+  default:
+    console.log("Case default");
+    break;
+}
+
+let users: string[] = [];
+
+users.push("Gio");
+users.push("Gesse");
+users.push("Joao");
+users.push("Maria");
+
+for (let itemLoop = 0; itemLoop < users.length; itemLoop++) {
+  const itemArray = users[itemLoop];
+  console.log(itemArray);
+}
+
+for (const itemArray in users) {
+  console.log("Using IN", itemArray);
+}
+
+for (const itemArray of users) {
+  console.log("Using OF", itemArray);
+}
+
+const updatedUsers = users.map((item, index) => {
+  console.log("Foreach: ", item, index);
+
+  return item + " teste ";
+});
+
+console.log(updatedUsers);
+```
