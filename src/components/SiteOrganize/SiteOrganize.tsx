@@ -11,15 +11,38 @@ type SiteOrganizeData = {
   mainTitle: string;
   description: string;
   options: string;
+  boxes: Array<{ image: string; goals: string; price: string }>;
 };
 
 function SiteOrganize() {
-
   const templateData: SiteOrganizeData = {
     subTitle: "Saving Accounts",
     mainTitle: "Organize your money the right way",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     options: "All features",
+    boxes: [
+      {
+        image: Frame8Image,
+        goals: "New Laptop",
+        price: "400$",
+      },
+      {
+        image: Frame82Image,
+        goals: "Dream bike",
+        price: "200$",
+      },
+      {
+        image: Frame83Image,
+        goals: "Holiday",
+        price: "14000$",
+      },
+      {
+        image: Frame84Image,
+        goals: "Camera",
+        price: "100$",
+      },
+    ],
   };
 
   return (
@@ -32,32 +55,22 @@ function SiteOrganize() {
             <p className="text-2">{templateData.description}</p>
           </section>
           <section className="block-two">
-            <div className="all-features">{templateData.options}
+            <div className="all-features">
+              {templateData.options}
               <img className="vector-3" src={Vector3Image} />
             </div>
           </section>
         </div>
         <div className="items">
-          <div>
-            <img src={Frame8Image} />
-            <div className="info">New Laptop</div>
-            <div className="money">400$</div>
-          </div>
-          <div>
-            <img src={Frame82Image} />
-            <div className="info">Dream bike</div>
-            <div className="money">200$</div>
-          </div>
-          <div>
-            <img src={Frame83Image} />
-            <div className="info">Holiday</div>
-            <div className="money">14000$</div>
-          </div>
-          <div>
-            <img src={Frame84Image} />
-            <div className="info">Camera</div>
-            <div className="money">100$</div>
-          </div>
+          {templateData.boxes.map((itemBoxes) => {
+            return (
+              <div>
+                <img src={itemBoxes.image} />
+                <div className="info">{itemBoxes.goals}</div>
+                <div className="money">{itemBoxes.price}</div>
+              </div>
+            );
+          })}
           <div>
             <img src={Frame85Image} />
           </div>

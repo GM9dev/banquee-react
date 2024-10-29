@@ -18,11 +18,9 @@ type SiteNeedData = {
   list4: string;
   textList4: string;
   list5: string;
-
-}
+};
 
 function SiteNeed() {
-
   const templateData: SiteNeedData = {
     mainTitle: "Need help?",
     contactPhoneNumber: "+49 176 123 456",
@@ -34,7 +32,8 @@ function SiteNeed() {
     list2: "How do I order a new card?",
     list3: "How to change my account limits?",
     list4: "How does Banko premium works?",
-    textList4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+    textList4:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
     list5: "Can I have two Banko accounts?",
   };
 
@@ -44,21 +43,22 @@ function SiteNeed() {
         <div className="block-11">
           <section className="block-12">
             <div className="title-1">{templateData.mainTitle}</div>
-              <div className="position-txt-2 distance-1">
-                <img className="size-img" src={Badge11Image} />
-                <div className="size-7">
-                  <div className="name">{templateData.contactPhoneNumber}</div>
-                  <div className="money">{templateData.contactNumber}</div>
-                </div>
+            <div className="position-txt-2 distance-1">
+              <img className="size-img" src={Badge11Image} />
+              <div className="size-7">
+                <div className="name">{templateData.contactPhoneNumber}</div>
+                <div className="money">{templateData.contactNumber}</div>
               </div>
-              <div className="position-txt-2">
-                <img className="size-img" src={Badge12Image} />
-                <div className="size-7">
-                  <div className="name">{templateData.email}</div>
-                  <div className="money">{templateData.contactEmail}</div>
-                </div>
-              </div>       
-            <div className="compare-cards-3">{templateData.option}
+            </div>
+            <div className="position-txt-2">
+              <img className="size-img" src={Badge12Image} />
+              <div className="size-7">
+                <div className="name">{templateData.email}</div>
+                <div className="money">{templateData.contactEmail}</div>
+              </div>
+            </div>
+            <div className="compare-cards-3">
+              {templateData.option}
               <img className="vector-3" src={Vector3Image} />
             </div>
           </section>
@@ -72,16 +72,16 @@ function SiteNeed() {
               <img className="add-img" src={RiAddImage} />
             </div>
             <div className="distance-4 padding border-bottom">
-              <div className="info distance-1">
-              {templateData.list3}
-              </div>
+              <div className="info distance-1">{templateData.list3}</div>
               <img className="add-img" src={RiAddImage} />
             </div>
             <div className="distance-4 padding">
               <div className="info info-3">{templateData.list4}</div>
               <img className="add-img" src={RiCloseImage} />
             </div>
-            <div className="text-5 border-bottom text-features">{templateData.textList4}</div>
+            <div className="text-5 border-bottom text-features">
+              {templateData.textList4}
+            </div>
             <div className="distance-4 padding">
               <div className="info">{templateData.list5}</div>
               <img className="add-img" src={RiAddImage} />
