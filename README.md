@@ -151,13 +151,13 @@ console.log(cliente1.carros[0].multas.length);
 let value = 7;
 
 if (value > 20) {
-  console.log("Valor maior que 10");
+  console.log("Valor maior que 20");
 } else if (value > 10 && value < 20) {
   console.log("Valor entre 11 e 19");
 } else if (value > 5 && value < 11) {
   console.log("Valor entre 6 e 10");
 } else {
-  console.log("Valor menor que 10");
+  console.log("Valor menor que 5");
 }
 
 let userName: string;
