@@ -327,4 +327,22 @@ const copyValue1 = [11, 33, ...value1 ];
 const value2 = { name: "Gio" };
 const copyValue2 = { id: 1, ...value2 };
 // console.log(copyValue2);
+
+
+// if - else
+
+const comp1 = 10;
+const comp2 = 20;
+
+if (comp1 > comp2) {
+    console.log("maior")
+} else if (comp1 === 10) {
+    console.log("igual a 10")
+} else {
+    console.log("outro resultado")
+}
+
+const resultComp = (comp1 > comp2) ? "maior" : "outro resultado"
+console.log(resultComp)
+
 ```
