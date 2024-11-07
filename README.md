@@ -203,4 +203,18 @@ const updatedUsers = users.map((item, index) => {
 });
 
 console.log(updatedUsers);
+
+// Lista de exercicios
+
+type UserType = {
+  name: string;
+  created_at: string;
+};
+
+const users: UserType[] = [
+  { name: "Gio", created_at: "2024-10-29 07:58:24" },
+  { name: "Gesse", created_at: "2024-07-16 14:18:00" },
+];
+
+// 1. Fazer uma lista de frutas e imprimir o nome de cada uma delas
 ```
