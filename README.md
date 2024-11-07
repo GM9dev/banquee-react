@@ -218,3 +218,113 @@ const users: UserType[] = [
 
 // 1. Fazer uma lista de frutas e imprimir o nome de cada uma delas
 ```
+
+```typescript
+const userNames: string[] = [ "Maria", "Zil", "Gesse M", "Joao", "Billy Guy"];
+
+
+userNames.concat;
+const result1 = userNames.concat(["Robert", "Joao"])
+// console.log(result1);
+
+userNames.every;
+const result2 = userNames.every( (item) => {
+    return item.length > 2;
+} )
+// console.log(result2);
+
+userNames.some;
+const result3 = userNames.some( (item) => {
+    return item.length > 4
+} );
+// console.log(result3);
+
+userNames.filter;
+const result4 = userNames.filter( (item) => {
+    return item.length > 4
+});
+// console.log(result4);
+
+userNames.find;
+const result5 = userNames.find( (item) => {
+    return item.match("ia")
+} );
+// console.log(result5);
+
+userNames.findIndex;
+const result6 = userNames.findIndex( (item) => {
+    return item.length > 9
+} )
+// console.log(userNames[ result6 ]);
+
+userNames.forEach;
+let totalLetras = 0
+const result7 = userNames.forEach( (item) => {
+    totalLetras = totalLetras + item.length
+} )
+// console.log(totalLetras)
+
+userNames.includes;
+const result8 = userNames.includes("Gio")
+// console.log(result8)
+
+userNames.join;
+const result9 = userNames.join(", - ");
+// console.log(result9);
+
+userNames.length;
+// console.log(userNames.length);
+
+userNames.map;
+const result10 = userNames.map((item) => {
+    return item + "_TESTE";
+});
+// console.log(result10);
+
+userNames.reduce;
+const cart = [
+    { id: 6, name: "Ball", price: 8.9 },
+    { id: 8, name: "Chocolate", price: 5 },
+]
+const result11 = cart.reduce( (acc, curr) => {
+    return curr.price + acc;
+} , 0 )
+// console.log(result11)
+
+userNames.slice;
+const result12 = userNames.slice(1,3)
+// console.log(result12)
+
+//warning: mexe no espaço de memória inicial, fazer copia antes
+const copy = [...userNames];
+const result13 = copy.splice(2, 1, ...["Novo usuario", "Novo usuario 1"])
+// console.log(copy, result13);
+
+userNames.sort;
+const copy1 = [
+    { name: "Gio" },
+    { name: "Andrea" },
+];
+const result14 = copy1.sort((a, b) => {
+    const firstLetterA = a.name[0];
+    const firstLetterB = b.name.slice(0, 1);
+
+    return firstLetterA < firstLetterB ? -1 : 1;
+});
+console.log(result14);
+
+const copy2 = [...userNames];
+const result15 = copy2.sort((a, b) => {
+    return a.length < b.length ? -1 : 1;
+});
+// console.log(result15);
+
+// copia de memoria
+const value1 = [1, 2, 3];
+const copyValue1 = [11, 33, ...value1 ];
+// console.log(copyValue1);
+
+const value2 = { name: "Gio" };
+const copyValue2 = { id: 1, ...value2 };
+// console.log(copyValue2);
+```
