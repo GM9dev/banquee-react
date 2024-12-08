@@ -1,94 +1,86 @@
 .SitePeople .banner-content.banner-size {
-    height: 1122px;
+  height: 1122px;
 }
 
 .SitePeople .block-8 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
 }
 
 .SitePeople .block-8 .title-1 {
-    width: 600px;
-    padding-top: 16px;
+  width: 600px;
+  padding-top: 16px;
 }
 
 .SitePeople .position-txt {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
-.SitePeople .rate {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 180%;
+.SitePeople .block-8 .text-4 {
+  display: flex;
+  align-items: center;
 }
 
 .SitePeople .distance-2 {
-    margin-right: 16px;
-    height: 40px;
-    width: auto;
+  margin-right: 16px;
+  height: 40px;
+  width: auto;
 }
 
 .SitePeople .block-9 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
-.SitePeople .block-9 .text-features {
-    font-size: 16px;
-    line-height: 160%;
-  }
-
 .SitePeople .size {
-    width: 378.67px;
-    padding: 32px;
-    border: 1px solid #e8e8e8;
-    border-radius: 10px;
-    box-sizing: border-box;
+  width: 378.67px;
+  padding: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .SitePeople .size.size-1 {
-    height: 373px;
+  height: 373px;
 }
 
 .SitePeople .size.size-2 {
-    height: 477px;
+  height: 477px;
 }
 
 .SitePeople .size.size-3 {
-    height: 399px;
+  height: 399px;
 }
 
 .SitePeople .size.size-4 {
-    height: 399px;
-    position: absolute;
-    top: 405px;
+  height: 399px;
+  position: absolute;
+  top: 405px;
 }
 
 .SitePeople .size.size-5 {
-    height: 369px;
-    position: absolute;
-    top: 509px;
-    left: 411px;
+  height: 369px;
+  position: absolute;
+  top: 509px;
+  left: 411px;
 }
 
 .SitePeople .size.size-6 {
-    height: 377px;
-    position: absolute;
-    top: 431px;
-    left: 821px;
+  height: 377px;
+  position: absolute;
+  top: 431px;
+  left: 821px;
 }
 
 .SitePeople .rating {
-    width: 116px;
-    height: 20px;
-    margin-bottom: 8px;
+  width: 116px;
+  height: 20px;
+  margin-bottom: 8px;
 }
 
 .SitePeople .distance-3 {
-    margin: 16px 0 24px 0;
+  margin: 16px 0 24px 0;
 }

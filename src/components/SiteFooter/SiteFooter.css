@@ -1,57 +1,57 @@
 .SiteFooter.banner-container-end {
-    padding: 97px 0 48px 0;
+  padding: 97px 0 48px 0;
 }
 
 .SiteFooter .banner-content-end {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .SiteFooter .block-15 {
-    display: flex;
-    padding-bottom: 80px;
-    border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 16px;
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 16px;
 }
 
 .SiteFooter .block-15 .nav-left {
-    margin-right: 300px;
+  margin-right: 300px;
 }
 
 .SiteFooter .block-16 {
-    display: flex;
-    gap: 48px;
+  display: flex;
+  gap: 48px;
 }
 
 .SiteFooter .size-8 {
-    width: 205.25px;
+  width: 205.25px;
 }
 
 .SiteFooter .color {
-    color: #1A191E;
-    opacity: 50%;
+  color: #1a191e;
+  opacity: 50%;
 }
 
 .SiteFooter .distance-7 {
-    margin: 16px 0;
+  margin: 16px 0;
 }
 
 .SiteFooter .block-17 {
-    display: flex;
+  display: flex;
 }
 
 .SiteFooter .text-6 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 160%;
-    display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+  display: flex;
 }
 
 .SiteFooter .distance-8 {
-    display: flex;
-    margin-left: 898px;
+  display: flex;
+  margin-left: 898px;
 }
 
 .SiteFooter .distance-9 {
-    margin-right: 32px;
+  margin-right: 32px;
 }

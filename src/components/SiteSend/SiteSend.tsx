@@ -13,13 +13,8 @@ function SiteSend() {
     mainTitle: "Send & receive money instantly",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    listBenefits: [
-      "Malesuada Ipsum",
-      "Vestibulum",
-      "Parturient Lorem",
-    ],
+    listBenefits: ["Malesuada Ipsum", "Vestibulum", "Parturient Lorem"],
   };
-
 
   return (
     <div className="SiteSend banner-container-128 background-green">
@@ -27,16 +22,17 @@ function SiteSend() {
         <div className="block-3">
           <section>
             <div className="first-block-4">
-              <div className="title-1">{templateData.mainTitle} 
+              <div className="title-1">
+                {templateData.mainTitle}
                 <p className="text-2">{templateData.description}</p>
               </div>
             </div>
             <div className="three-ben">
               {templateData.listBenefits.map((itemBenefit) => {
                 return (
-              <div className="text-ben">
-                <img className="img-ben" src={Badge8Image} /> {itemBenefit}
-              </div>
+                  <div className="text-4">
+                    <img className="img-ben" src={Badge8Image} /> {itemBenefit}
+                  </div>
                 );
               })}
             </div>

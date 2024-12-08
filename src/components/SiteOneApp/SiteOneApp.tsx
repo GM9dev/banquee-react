@@ -55,7 +55,7 @@ function SiteOneApp() {
       <div className="banner-content">
         <div className="block-2">
           <section className="first-block-3">
-            <div className="app-title">{templateData.mainTitle}</div>
+            <div className="title-h2">{templateData.mainTitle}</div>
             <div className="six-features">
               {templateData.appBoxes.map((itemBoxes) => {
                 return (

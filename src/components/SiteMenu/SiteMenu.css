@@ -17,10 +17,10 @@
 
 .SiteMenu.email-menu .nav-center {
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
+  line-height: 170%;
   padding: 8px 8px 8px 12px;
   display: flex;
-  align-items: center;
 }
 
 .SiteMenu.email-menu .nav-center:nth-child(2) {

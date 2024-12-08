@@ -62,7 +62,7 @@ function SitePeople() {
             <div className="title-1">{templateData.mainTitle}</div>
           </section>
           <section className="position-txt">
-            <div className="rate">
+            <div className="text-4">
               <img className="distance-2" src={Badge9Image} />
               Rated <div className="green">4.8/5</div> from over 1000 users
             </div>

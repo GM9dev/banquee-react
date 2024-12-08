@@ -13,7 +13,8 @@ function SiteSeemless() {
   const templateData: SiteSeemlessData = {
     subTitle: "Tools",
     mainTitle: "Seemless integration",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
     listBenefits: [
       "Secure and encrypted integration",
       "Fully API interface",
@@ -35,13 +36,13 @@ function SiteSeemless() {
           </div>
           <div className="second-block">
             <div className="list-2">
-            {templateData.listBenefits.map((itemBenefit) => {
+              {templateData.listBenefits.map((itemBenefit) => {
                 return (
-                  <div className="list-margin-2">
+                  <div className="text-4">
                     <img className="badge-4" src={BadgeImage} />
                     {itemBenefit}
                   </div>
-                )
+                );
               })}
             </div>
           </div>
