@@ -37,14 +37,14 @@ function SiteBanking() {
             <div className="four-benefits">
               {templateData.listBenefits.map((itemBenefit) => {
                 return (
-                  <div className="ben">
+                  <div className="text-4">
                     <img className="badge" src={BadgeImage} />
                     {itemBenefit}
                   </div>
                 );
               })}
             </div>
-            <div className="block-button">
+            <div className="buttons">
               <div className="green-button">{templateData.mainButtonText}</div>
               <div className="compare-cards">
                 {templateData.secondButtonText}
@@ -53,7 +53,7 @@ function SiteBanking() {
             </div>
           </section>
           <section>
-            <img className="size-" src={Cards} />
+            <img className="size-9" src={Cards} />
           </section>
         </div>
       </div>

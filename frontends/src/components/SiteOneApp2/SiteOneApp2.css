@@ -26,11 +26,7 @@
   color: #ffffff;
 }
 
-.SiteOneApp2 .text-4 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 180%;
-  letter-spacing: 0;
+.SiteOneApp2 .block-10 .text-4 {
   margin: 16px 11px 32px 0;
   color: #ffffff;
 }
@@ -39,8 +35,6 @@
   width: 464px;
   color: #ffffff;
   margin-bottom: 48px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .SiteOneApp2 .block-10 .text-features {
@@ -59,5 +53,5 @@
 
 .SiteOneApp2 .app {
   position: absolute;
-  top: 19px;
+  top: 22px;
 }

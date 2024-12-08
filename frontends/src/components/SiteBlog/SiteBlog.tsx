@@ -61,9 +61,7 @@ function SiteBlog() {
                 <div>
                   <img className="distance-5" src={itemBoxes.image} />
                   <div className="title-3">{itemBoxes.title}</div>
-                  <div className="text-features distance-6">
-                    {itemBoxes.text}
-                  </div>
+                  <div className="text-features">{itemBoxes.text}</div>
                   <div className="block-14">
                     <div className="font">{itemBoxes.link1}</div>
                     <div className="font">{itemBoxes.link2}</div>

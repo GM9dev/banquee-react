@@ -8,8 +8,8 @@ type SiteFooterData = {
     option2: string;
     option3: string;
   }>;
-  lastword1: string;
-  lastword2: string;
+  lastWord1: string;
+  lastWord2: string;
 };
 
 function SiteFooter() {
@@ -41,8 +41,8 @@ function SiteFooter() {
         option3: "Instagram",
       },
     ],
-    lastword1: "Impressum",
-    lastword2: "Datenschutz",
+    lastWord1: "Impressum",
+    lastWord2: "Datenschutz",
   };
   return (
     <div className="SiteFooter banner-container-end">
@@ -72,8 +72,8 @@ function SiteFooter() {
           <div className="money">- Powered by</div>
           <div className="green text-6">Webflow</div>
           <div className="distance-8 money">
-            <div className="distance-9">{templateData.lastword1}</div>
-            <div>{templateData.lastword2}</div>
+            <div className="distance-9">{templateData.lastWord1}</div>
+            <div>{templateData.lastWord2}</div>
           </div>
         </div>
       </div>

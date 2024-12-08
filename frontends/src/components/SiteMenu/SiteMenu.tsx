@@ -53,12 +53,12 @@ function SiteMenu() {
         <div className="nav-center">{templateData.option1}</div>
         <div className="nav-center">
           {templateData.option2}
-          <img className="Vector" src={VectorImage} />
+          <img className="vector" src={VectorImage} />
         </div>
         <div className="nav-center">{templateData.option3}</div>
         <div className="nav-center">
           {templateData.option4}
-          <img className="Vector" src={VectorImage} />
+          <img className="vector" src={VectorImage} />
         </div>
       </div>
       <div className="nav-right1">{templateData.login}</div>

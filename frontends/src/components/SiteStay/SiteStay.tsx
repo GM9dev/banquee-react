@@ -9,18 +9,15 @@ type SiteStayData = {
   description: string;
   listBenefits: Array<string>;
   options: string;
-}
+};
 
 function SiteStay() {
   const templateData: SiteStayData = {
     subTitle: "Notifications",
     mainTitle: "Stay notified",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    listBenefits: [
-      "Malesuada Ipsum",
-      "Vestibulum",
-      "Parturient Lorem",
-    ],
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    listBenefits: ["Malesuada Ipsum", "Vestibulum", "Parturient Lorem"],
     options: "Compare Cards",
   };
 
@@ -34,16 +31,17 @@ function SiteStay() {
               <div className="title-1">{templateData.mainTitle}</div>
               <p className="text-3">{templateData.description}</p>
               <div className="list">
-              {templateData.listBenefits.map((itemBenefit) => {
-                return (
-                  <div className="list-margin">
-                    <img className="badge-2" src={BadgeImage} />
-                    {itemBenefit}
-                  </div>
-                );
-              })}
+                {templateData.listBenefits.map((itemBenefit) => {
+                  return (
+                    <div className="list-margin">
+                      <img className="badge" src={BadgeImage} />
+                      {itemBenefit}
+                    </div>
+                  );
+                })}
               </div>
-              <div className="compare-cards">{templateData.options}
+              <div className="compare-cards">
+                {templateData.options}
                 <img className="vector-3" src={Vector3Image} />
               </div>
             </div>

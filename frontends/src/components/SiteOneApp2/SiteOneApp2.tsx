@@ -4,22 +4,23 @@ import Badge10Image from "./../../assets/badge-10.svg";
 import "./SiteOneApp2.css";
 
 type SiteOneApp2Data = {
-    mainTitle: string;
-    description: string;
-    listBenefits: Array<string>;
-}
+  mainTitle: string;
+  description: string;
+  listBenefits: Array<string>;
+};
 
 function SiteOneApp2() {
-const templateData: SiteOneApp2Data = {
-  mainTitle: "One app. One banking.",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-  listBenefits: [
-    "Instant Transfer",
-    "Payments worldwide",
-    "Saving accounts",
-    "100% mobile banking",
-  ]
-};
+  const templateData: SiteOneApp2Data = {
+    mainTitle: "One app. One banking.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    listBenefits: [
+      "Instant transactions",
+      "Payments worldwide",
+      "Saving accounts",
+      "100% mobile banking",
+    ],
+  };
 
   return (
     <div className="SiteOneApp2 banner-container">
