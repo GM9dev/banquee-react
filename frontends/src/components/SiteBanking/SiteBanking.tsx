@@ -2,6 +2,7 @@ import Cards from "./../../assets/cards.svg";
 import Vector3 from "./../../assets/Vector-3.svg";
 import BadgeImage from "./../../assets/badge.svg";
 import "./SiteBanking.css";
+import { useEffect, useState } from "react";
 
 type SiteBankingData = {
   mainTitle: string;
@@ -12,20 +13,29 @@ type SiteBankingData = {
 };
 
 function SiteBanking() {
-  const templateData: SiteBankingData = {
-    mainTitle: "Banking starts here.",
+  const [templateData, setTemplateData] = useState<SiteBankingData>({
+    mainTitle: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "",
     listBenefits: [
-      "Instant Transfer",
-      "Payments worldwide",
-      "Saving accounts",
-      "100% mobile banking",
-      "0% paper",
     ],
-    mainButtonText: "Open Account",
-    secondButtonText: "Compare Cards",
-  };
+    mainButtonText: "",
+    secondButtonText: "",
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-banking", {
+      method: "POST"
+    });
+
+    const response = await request.json() as SiteBankingData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteBanking banner-container-128">
