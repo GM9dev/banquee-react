@@ -2,6 +2,7 @@ import App3Image from "./../../assets/app-3.svg";
 import Grid3Image from "./../../assets/grid-3.svg";
 import Badge10Image from "./../../assets/badge-10.svg";
 import "./SiteOneApp2.css";
+import { useState, useEffect } from "react";
 
 type SiteOneApp2Data = {
   mainTitle: string;
@@ -10,17 +11,25 @@ type SiteOneApp2Data = {
 };
 
 function SiteOneApp2() {
-  const templateData: SiteOneApp2Data = {
-    mainTitle: "One app. One banking.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    listBenefits: [
-      "Instant transactions",
-      "Payments worldwide",
-      "Saving accounts",
-      "100% mobile banking",
-    ],
-  };
+  const [templateData, setTemplateData] = useState<SiteOneApp2Data>({
+    mainTitle: "",
+    description: "",
+    listBenefits: [],
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-one-app-2", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteOneApp2Data;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteOneApp2 banner-container">

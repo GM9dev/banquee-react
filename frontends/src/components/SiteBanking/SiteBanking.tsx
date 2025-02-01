@@ -15,20 +15,18 @@ type SiteBankingData = {
 function SiteBanking() {
   const [templateData, setTemplateData] = useState<SiteBankingData>({
     mainTitle: "",
-    description:
-      "",
-    listBenefits: [
-    ],
+    description: "",
+    listBenefits: [],
     mainButtonText: "",
     secondButtonText: "",
   });
 
   async function getServerData() {
     const request = await fetch("http://localhost:5679/site-banking", {
-      method: "POST"
+      method: "POST",
     });
 
-    const response = await request.json() as SiteBankingData;
+    const response = (await request.json()) as SiteBankingData;
 
     setTemplateData(response);
   }

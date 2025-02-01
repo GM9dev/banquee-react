@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./SiteFooter.css";
 
 type SiteFooterData = {
@@ -13,37 +14,27 @@ type SiteFooterData = {
 };
 
 function SiteFooter() {
-  const templateData: SiteFooterData = {
-    sitelogo: "banquee",
-    boxes: [
-      {
-        title: "About",
-        option1: "Features",
-        option2: "Pricing",
-        option3: "Support",
-      },
-      {
-        title: "Blog",
-        option1: "Products",
-        option2: "Technology",
-        option3: "Crypto",
-      },
-      {
-        title: "Webflow",
-        option1: "Styleguide",
-        option2: "Licensing",
-        option3: "Changelog",
-      },
-      {
-        title: "Social Media",
-        option1: "Twitter",
-        option2: "Facebook",
-        option3: "Instagram",
-      },
-    ],
-    lastWord1: "Impressum",
-    lastWord2: "Datenschutz",
-  };
+  const [templateData, setTemplateData] = useState<SiteFooterData>({
+    sitelogo: "",
+    boxes: [],
+    lastWord1: "",
+    lastWord2: "",
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-footer", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteFooterData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
+
   return (
     <div className="SiteFooter banner-container-end">
       <div className="banner-content-end">

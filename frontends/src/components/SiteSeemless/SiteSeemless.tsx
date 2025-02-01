@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import BadgeImage from "./../../assets/badge.svg";
 import GridImage from "./../../assets/grid.svg";
 import "./SiteSeemless.css";
@@ -10,17 +11,26 @@ type SiteSeemlessData = {
 };
 
 function SiteSeemless() {
-  const templateData: SiteSeemlessData = {
-    subTitle: "Tools",
-    mainTitle: "Seemless integration",
-    description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-    listBenefits: [
-      "Secure and encrypted integration",
-      "Fully API interface",
-      "Payments worldwide",
-    ],
-  };
+  const [templateData, setTemplateData] = useState<SiteSeemlessData>({
+    subTitle: "",
+    mainTitle: "",
+    description: "",
+    listBenefits: [],
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-seemless", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteSeemlessData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteSeemless banner-container-160">

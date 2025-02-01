@@ -3,6 +3,7 @@ import Image2Image from "./../../assets/image-2.svg";
 import ImageImage from "./../../assets/image.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteBlog.css";
+import { useState, useEffect } from "react";
 
 type SiteBlogData = {
   title: string;
@@ -17,33 +18,26 @@ type SiteBlogData = {
 };
 
 function SiteBlog() {
-  const templateData: SiteBlogData = {
-    title: "Blog",
-    options: "All Articles",
-    boxes: [
-      {
-        image: ImageImage,
-        title: "How To Start Using Banko For Your Startup",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
-        link1: "Product",
-        link2: "Technology",
-      },
-      {
-        image: Image2Image,
-        title: "10 Things Nobody Told You About Banko",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
-        link1: "Product",
-        link2: "Technology",
-      },
-      {
-        image: Image3Image,
-        title: "7 Ways To Improve You Saving Habits",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
-        link1: "Product",
-        link2: "Technology",
-      },
-    ],
-  };
+  const [templateData, setTemplateData] = useState<SiteBlogData>({
+    title: "",
+    options: "",
+    boxes: [],
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-blog", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteBlogData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
+
   return (
     <div className="SiteBlog banner-container-160">
       <div className="banner-content">

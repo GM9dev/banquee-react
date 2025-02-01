@@ -3,25 +3,25 @@ import VectorImage from "./../../assets/Vector.svg";
 import "./SiteMenu.css";
 
 type SiteMenuData = {
-  sitelogo: string;
+  siteLogo: string;
   option1: string;
   option2: string;
   option3: string;
   option4: string;
   login: string;
-  openaccount: string;
+  openAccount: string;
 };
 
 function SiteMenu() {
   // variable section - useState [variavel, setter da variavel]
   const [templateData, setTemplateData] = useState<SiteMenuData>({
-    sitelogo: "",
+    siteLogo: "",
     option1: "",
     option2: "",
     option3: "",
     option4: "",
     login: "",
-    openaccount: "",
+    openAccount: "",
   });
 
   // function section
@@ -48,7 +48,7 @@ function SiteMenu() {
   // renderer ou template section
   return (
     <div className="SiteMenu email-menu">
-      <div className="nav-left">{templateData.sitelogo}.</div>
+      <div className="nav-left">{templateData.siteLogo}.</div>
       <div className="nav-center-container">
         <div className="nav-center">{templateData.option1}</div>
         <div className="nav-center">
@@ -62,7 +62,7 @@ function SiteMenu() {
         </div>
       </div>
       <div className="nav-right1">{templateData.login}</div>
-      <div className="nav-right2">{templateData.openaccount}</div>
+      <div className="nav-right2">{templateData.openAccount}</div>
     </div>
   );
 }

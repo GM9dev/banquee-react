@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Cards2Image from "./../../assets/cards-2.svg";
 import "./SitePerfect.css";
 
@@ -12,15 +13,29 @@ type SitePerfectData = {
 };
 
 function SitePerfect() {
-  const templateData: SitePerfectData = {
-    subTitle: "Account",
-    mainTitle: "Perfect card",
-    mainTitle2: "for your needs.",
-    description: "Senectus et netus et malesuada fames ac turpis.",
-    description2: "Sagittis vitae et leo duis ut diam.",
-    mainButtonText: "Open Account",
-    secondButtonText: "Compare Cards",
-  };
+  const [templateData, setTemplateData] = useState<SitePerfectData>({
+    subTitle: "",
+    mainTitle: "",
+    mainTitle2: "",
+    description: "",
+    description2: "",
+    mainButtonText: "",
+    secondButtonText: "",
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-perfect", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SitePerfectData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SitePerfect banner-container-160">

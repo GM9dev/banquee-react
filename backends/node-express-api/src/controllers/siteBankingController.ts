@@ -10,7 +10,6 @@ function siteBankingController(request: Request, response: Response) {
       "Payments worldwide",
       "Saving accounts",
       "100% mobile banking",
-      "0% paper",
     ],
     mainButtonText: "Open Account",
     secondButtonText: "Compare Cards",

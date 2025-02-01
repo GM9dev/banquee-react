@@ -5,6 +5,7 @@ import Frame82Image from "./../../assets/Frame 8-2.svg";
 import Frame8Image from "./../../assets/Frame 8.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteOrganize.css";
+import { useEffect, useState } from "react";
 
 type SiteOrganizeData = {
   subTitle: string;
@@ -15,35 +16,27 @@ type SiteOrganizeData = {
 };
 
 function SiteOrganize() {
-  const templateData: SiteOrganizeData = {
-    subTitle: "Saving Accounts",
-    mainTitle: "Organize your money the right way",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    options: "All features",
-    boxes: [
-      {
-        image: Frame8Image,
-        goals: "New Laptop",
-        price: "400$",
-      },
-      {
-        image: Frame82Image,
-        goals: "Dream bike",
-        price: "200$",
-      },
-      {
-        image: Frame83Image,
-        goals: "Holiday",
-        price: "14000$",
-      },
-      {
-        image: Frame84Image,
-        goals: "Camera",
-        price: "100$",
-      },
-    ],
-  };
+  const [templateData, setTemplateData] = useState<SiteOrganizeData>({
+    subTitle: "",
+    mainTitle: "",
+    description: "",
+    options: "",
+    boxes: [],
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-organize", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteOrganizeData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteOrganize banner-container-160">

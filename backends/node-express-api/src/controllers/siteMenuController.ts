@@ -2,13 +2,13 @@ import { Request, Response } from "express";
 
 function siteMenuController(req: Request, res: Response) {
   res.status(200).json({
-    sitelogo: "banquee",
+    siteLogo: "banquee",
     option1: "Feature",
     option2: "Compare",
     option3: "Support",
     option4: "Blog",
     login: "Login",
-    openaccount: "Open Account",
+    openAccount: "Open Account",
   });
 }
 

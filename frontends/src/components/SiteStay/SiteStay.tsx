@@ -2,6 +2,7 @@ import Grid2Image from "./../../assets/grid-2.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import BadgeImage from "./../../assets/badge.svg";
 import "./SiteStay.css";
+import { useEffect, useState } from "react";
 
 type SiteStayData = {
   subTitle: string;
@@ -12,14 +13,27 @@ type SiteStayData = {
 };
 
 function SiteStay() {
-  const templateData: SiteStayData = {
-    subTitle: "Notifications",
-    mainTitle: "Stay notified",
-    description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    listBenefits: ["Malesuada Ipsum", "Vestibulum", "Parturient Lorem"],
-    options: "Compare Cards",
-  };
+  const [templateData, setTemplateData] = useState<SiteStayData>({
+    subTitle: "",
+    mainTitle: "",
+    description: "",
+    listBenefits: [""],
+    options: "",
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-stay", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteStayData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteStay banner-container-160">

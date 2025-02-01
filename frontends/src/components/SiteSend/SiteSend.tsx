@@ -1,6 +1,7 @@
 import Transactions2Image from "./../../assets/transactions-2.svg";
 import Badge8Image from "./../../assets/badge-8.svg";
 import "./SiteSend.css";
+import { useState, useEffect } from "react";
 
 type SiteSendData = {
   mainTitle: string;
@@ -9,12 +10,25 @@ type SiteSendData = {
 };
 
 function SiteSend() {
-  const templateData: SiteSendData = {
-    mainTitle: "Send & receive money instantly",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    listBenefits: ["Malesuada Ipsum", "Vestibulum", "Parturient Lorem"],
-  };
+  const [templateData, setTemplateData] = useState<SiteSendData>({
+    mainTitle: "",
+    description: "",
+    listBenefits: [],
+  });
+
+  async function getServerData() {
+    const request = await fetch("http://localhost:5679/site-send", {
+      method: "POST",
+    });
+
+    const response = (await request.json()) as SiteSendData;
+
+    setTemplateData(response);
+  }
+
+  useEffect(() => {
+    getServerData();
+  }, []);
 
   return (
     <div className="SiteSend banner-container-128 background-green">
