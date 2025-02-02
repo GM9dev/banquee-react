@@ -1,6 +1,6 @@
-import { json, Request, response, Response } from "express";
+import { Request, Response } from "express";
 
-function siteSendController(req: Request, res: Response) {
+function siteSendController(request: Request, response: Response) {
   response.status(200).json({
     mainTitle: "Send & receive money instantly",
     description:

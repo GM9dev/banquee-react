@@ -9,22 +9,22 @@ function siteOrganizeController(req: Request, response: Response) {
     options: "All features",
     boxes: [
       {
-        image: Frame8Image,
+        image: "Frame 8.svg",
         goals: "New Laptop",
         price: "400$",
       },
       {
-        image: Frame82Image,
+        image: "Frame 8-2.svg",
         goals: "Dream bike",
         price: "200$",
       },
       {
-        image: Frame83Image,
+        image: "Frame 8-3.svg",
         goals: "Holiday",
         price: "14000$",
       },
       {
-        image: Frame84Image,
+        image: "Frame 8-4.svg",
         goals: "Camera",
         price: "100$",
       },

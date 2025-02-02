@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import VectorImage from "./../../assets/Vector.svg";
 import "./SiteMenu.css";
+import { Link } from "react-router";
 
 type SiteMenuData = {
   siteLogo: string;
@@ -48,9 +49,13 @@ function SiteMenu() {
   // renderer ou template section
   return (
     <div className="SiteMenu email-menu">
-      <div className="nav-left">{templateData.siteLogo}.</div>
+      <div className="nav-left">
+        <Link to={"/"}>{templateData.siteLogo}</Link>
+      </div>
       <div className="nav-center-container">
-        <div className="nav-center">{templateData.option1}</div>
+        <div className="nav-center">
+          <Link to={"/all-in-one"}>{templateData.option1}</Link>
+        </div>
         <div className="nav-center">
           {templateData.option2}
           <img className="vector" src={VectorImage} />

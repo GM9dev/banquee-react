@@ -1,6 +1,3 @@
-import Image3Image from "./../../assets/image-3.svg";
-import Image2Image from "./../../assets/image-2.svg";
-import ImageImage from "./../../assets/image.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteBlog.css";
 import { useState, useEffect } from "react";

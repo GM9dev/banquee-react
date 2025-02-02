@@ -1,11 +1,5 @@
 import CardImage from "./../../assets/card.svg";
 import AppImage from "./../../assets/app.svg";
-import Badge7Image from "./../../assets/badge-7.svg";
-import Badge6Image from "./../../assets/badge-6.svg";
-import Badge5Image from "./../../assets/badge-5.svg";
-import Badge4Image from "./../../assets/badge-4.svg";
-import Badge3Image from "./../../assets/badge-3.svg";
-import Badge2Image from "./../../assets/badge-2.svg";
 import "./SiteOneApp.css";
 import { useEffect, useState } from "react";
 

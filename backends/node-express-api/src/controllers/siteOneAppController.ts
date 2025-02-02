@@ -7,32 +7,32 @@ function siteOneAppController(request: Request, response: Response) {
       {
         title: "Instant transactions",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge2Image,
+        image: "/badge-2.svg",
       },
       {
         title: "Saving accounts",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge3Image,
+        image: "/badge-3.svg",
       },
       {
         title: "Mobile banking",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge4Image,
+        image: "/badge-4.svg",
       },
       {
         title: "Advanced statistics",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge5Image,
+        image: "/badge-5.svg",
       },
       {
         title: "Virtual cards",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge6Image,
+        image: "/badge-6.svg",
       },
       {
         title: "Contactless payments",
         desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: Badge7Image,
+        image: "/badge-7.svg",
       },
     ],
   });

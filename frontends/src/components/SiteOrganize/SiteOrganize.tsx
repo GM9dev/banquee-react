@@ -1,8 +1,4 @@
 import Frame85Image from "./../../assets/Frame 8-5.svg";
-import Frame84Image from "./../../assets/Frame 8-4.svg";
-import Frame83Image from "./../../assets/Frame 8-3.svg";
-import Frame82Image from "./../../assets/Frame 8-2.svg";
-import Frame8Image from "./../../assets/Frame 8.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteOrganize.css";
 import { useEffect, useState } from "react";
@@ -65,7 +61,7 @@ function SiteOrganize() {
             );
           })}
           <div>
-            <img src={Frame85Image} />
+            <img src="/Frame 8-5.svg" />
           </div>
         </div>
       </div>
