@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 function siteMenuController(req: Request, res: Response) {
   res.status(200).json({
     siteLogo: "banquee",
-    option1: "Feature",
+    option1: "Features",
     option2: "Compare",
     option3: "Support",
     option4: "Blog",

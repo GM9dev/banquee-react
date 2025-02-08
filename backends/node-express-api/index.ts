@@ -13,6 +13,10 @@ import siteOneApp2Controller from "./src/siteOneApp2Controller";
 import siteNeedController from "./src/controllers/siteNeedController";
 import siteBlogController from "./src/controllers/siteBlogController";
 import siteFooterController from "./src/controllers/siteFooterController";
+import FeaturesAllInController from "./src/controllers/FeaturesSendManageKeepLoremController";
+import FeaturesSendManageKeepLoremController from "./src/controllers/FeaturesSendManageKeepLoremController";
+import FeaturesAllIn2Controller from "./src/controllers/FeaturesAllIn2Controller";
+import FeaturesChooseYourCardController from "./src/controllers/FeaturesChooseYourCard";
 
 const server = express();
 
@@ -42,6 +46,13 @@ server.post("/site-one-app-2", siteOneApp2Controller);
 server.post("/site-need", siteNeedController);
 server.post("/site-blog", siteBlogController);
 server.post("/site-footer", siteFooterController);
+server.post("/features-all-in", FeaturesAllInController);
+server.post(
+  "/features-send-manage-keep-lorem",
+  FeaturesSendManageKeepLoremController
+);
+server.post("/features-all-in-2", FeaturesAllIn2Controller);
+server.post("/features-choose-your-card", FeaturesChooseYourCardController);
 
 server.listen(port, () => {
   console.log(`Example server listening on port ${port}`);

@@ -1,0 +1,85 @@
+.FeaturesAllIn.container-size-1 {
+  background-color: #e8f2ee;
+  overflow: hidden;
+  height: 868px;
+}
+
+.FeaturesAllIn .block-one {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.FeaturesAllIn .info {
+  padding-top: 128px;
+}
+
+.FeaturesAllIn .title-h2 {
+  padding: 8px 0 16px 0;
+}
+
+.FeaturesAllIn .title-h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -3px;
+}
+
+.FeaturesAllIn .buttons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.FeaturesAllIn .green-button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #ffffff;
+  background-color: #5bb5a2;
+  border-radius: 6px;
+  padding: 16px 24px;
+}
+
+.FeaturesAllIn .compare-cards {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #5bb5a2;
+  display: flex;
+  align-items: center;
+}
+
+.FeaturesAllIn .cards {
+  padding-top: 120px;
+  display: flex;
+  gap: 66px;
+  right: 34px;
+}
+
+.FeaturesAllIn .card {
+  width: 255px;
+}
+
+.FeaturesAllIn .card:nth-child(1) {
+  top: 212px;
+}
+
+.FeaturesAllIn .card:nth-child(2) {
+  top: 131px;
+}
+
+.FeaturesAllIn .card:nth-child(3) {
+  top: 50px;
+}
+
+.FeaturesAllIn .card:nth-child(4) {
+  top: 131px;
+}
+
+.FeaturesAllIn .card:nth-child(5) {
+  top: 212px;
+}

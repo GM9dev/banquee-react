@@ -1,0 +1,105 @@
+.FeaturesAllIn2 {
+  padding-bottom: 0;
+}
+
+.FeaturesAllIn2 .block-two {
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.FeaturesAllIn2 .block-two .background.size-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.FeaturesAllIn2 .background {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+
+.FeaturesAllIn2 .title-3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -3px;
+}
+
+.FeaturesAllIn2 .size-1 {
+  width: 584px;
+}
+
+.FeaturesAllIn2 .title-3 {
+  margin-bottom: 8px;
+  padding-top: 56px;
+}
+
+.FeaturesAllIn2 .text-4 {
+  color: #1a191e;
+  opacity: 50%;
+}
+
+.FeaturesAllIn2 .cel {
+  margin-top: 73px;
+}
+
+.FeaturesAllIn2 .text-2:nth-child(2) {
+  margin-top: 16px;
+}
+
+.FeaturesAllIn2 .text-2:nth-child(3) {
+  margin-bottom: 96px;
+}
+
+.FeaturesAllIn2 .cards-three {
+  display: flex;
+  gap: 20px;
+}
+
+.FeaturesAllIn2 .card-6 {
+  top: 129px;
+  position: absolute;
+  right: 246px;
+}
+
+.FeaturesAllIn2 .card-7 {
+  top: 69px;
+}
+
+.FeaturesAllIn2 .card-8 {
+  top: 129px;
+  position: absolute;
+  left: 247px;
+}
+
+.FeaturesAllIn2 .block-two .background .title-3 {
+  padding-left: 47px;
+  padding-right: 77px;
+  letter-spacing: -2px;
+}
+
+.FeaturesAllIn2 .block-two .text-4 {
+  padding-left: 47px;
+  padding-right: 12px;
+}
+
+.FeaturesAllIn2 .block-two .background.size-10 .text-4 {
+  padding-bottom: 58px;
+}
+
+.FeaturesAllIn2 .size-10 {
+  width: 378.67px;
+  height: 550px;
+}
+
+.FeaturesAllIn2 .grid-5 {
+  padding-left: 47.33px;
+}
+
+.FeaturesAllIn2 .grid-6 {
+  padding-left: 39.67px;
+}

@@ -61,7 +61,7 @@ function SiteOrganize() {
             );
           })}
           <div>
-            <img src="/Frame 8-5.svg" />
+            <img src={Frame85Image} />
           </div>
         </div>
       </div>

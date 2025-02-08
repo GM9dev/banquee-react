@@ -35,11 +35,8 @@ function SiteOneApp2() {
     <div className="SiteOneApp2 banner-container">
       <div className="banner-content">
         <section className="block-10">
-          <div className="app-text-2">One app. One banking.</div>
-          <div className="text-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </div>
+          <div className="app-text-2">{templateData.mainTitle}</div>
+          <div className="text-4">{templateData.description}</div>
           <div className="four-benefits">
             {templateData.listBenefits.map((itemBenefit) => {
               return (

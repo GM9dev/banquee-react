@@ -54,7 +54,7 @@ function SiteMenu() {
       </div>
       <div className="nav-center-container">
         <div className="nav-center">
-          <Link to={"/all-in-one"}>{templateData.option1}</Link>
+          <Link to={"/features"}>{templateData.option1}</Link>
         </div>
         <div className="nav-center">
           {templateData.option2}

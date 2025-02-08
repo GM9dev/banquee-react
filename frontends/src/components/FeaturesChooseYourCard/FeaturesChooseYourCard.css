@@ -1,0 +1,65 @@
+.FeaturesChooseYourCard {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.FeaturesChooseYourCard .block-choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FeaturesChooseYourCard .title-1 {
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.FeaturesChooseYourCard .block-plans {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+}
+
+.FeaturesChooseYourCard .green-button-2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 180%;
+  color: #5bb5a2;
+  background-color: #e8f2ee;
+  border-radius: 4px;
+  width: 56px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.FeaturesChooseYourCard .block-popular {
+  display: flex;
+  gap: 8px;
+}
+
+.FeaturesChooseYourCard .block-price {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  padding-bottom: 8px;
+}
+
+.FeaturesChooseYourCard .title-2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: bold;
+  padding-top: 24px;
+}
+
+.FeaturesChooseYourCard .text-features {
+  color: #1a191e;
+  opacity: 50%;
+}
+
+.FeaturesChooseYourCard .cards-padd {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

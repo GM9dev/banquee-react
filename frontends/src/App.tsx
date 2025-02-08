@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
-import AllInOne from "./components/AllInOne/AllInOne";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/all-in-one" element={<AllInOne />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
       </BrowserRouter>
     </div>

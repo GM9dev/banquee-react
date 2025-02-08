@@ -1,0 +1,55 @@
+.FeaturesSendManageKeepLorem.container {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.FeaturesSendManageKeepLorem .box {
+  display: flex;
+  gap: 170px;
+  margin: 0 auto;
+}
+
+.FeaturesSendManageKeepLorem .box-1 {
+  width: 538.65px;
+  padding-top: 182px;
+}
+
+.FeaturesSendManageKeepLorem .text-3 {
+  font-size: 17.96px;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.FeaturesSendManageKeepLorem .text-3 {
+  padding-right: 13px;
+  padding-bottom: 32px;
+}
+
+.FeaturesSendManageKeepLorem .title-1 {
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.FeaturesSendManageKeepLorem .distance-6 {
+  padding-right: 199px;
+}
+
+.FeaturesSendManageKeepLorem .distance-7 {
+  padding-right: 107px;
+}
+
+.FeaturesSendManageKeepLorem .distance-8 {
+  padding-right: 140px;
+}
+
+.FeaturesSendManageKeepLorem .three-ben {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.FeaturesSendManageKeepLorem .three-ben .text-4 {
+  display: flex;
+  align-items: center;
+}

@@ -36,6 +36,12 @@ body,
   margin: 0 auto;
 }
 
+.block-columm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .compare-cards {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
