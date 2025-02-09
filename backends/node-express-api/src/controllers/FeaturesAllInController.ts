@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-function FeaturesAllIn(request: Request, response: Response) {
+function FeaturesAllInController(request: Request, response: Response) {
   response.status(200).json({
     info: "Features",
     mainTitle: "All in one card.",
@@ -11,4 +11,4 @@ function FeaturesAllIn(request: Request, response: Response) {
   });
 }
 
-export default FeaturesAllIn;
+export default FeaturesAllInController;

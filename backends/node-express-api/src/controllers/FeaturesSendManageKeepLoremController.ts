@@ -1,8 +1,8 @@
 import { Request, response, Response } from "express";
 
-function FeaturesSendManageKeepLoremController(
-  Request: Request,
-  Response: Response
+function featuresSendManageKeepLoremController(
+  request: Request,
+  response: Response
 ) {
   response.status(200).json({
     info: "Transactions",
@@ -20,4 +20,4 @@ function FeaturesSendManageKeepLoremController(
   });
 }
 
-export default FeaturesSendManageKeepLoremController;
+export default featuresSendManageKeepLoremController;

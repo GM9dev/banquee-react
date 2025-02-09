@@ -13,7 +13,7 @@ import siteOneApp2Controller from "./src/siteOneApp2Controller";
 import siteNeedController from "./src/controllers/siteNeedController";
 import siteBlogController from "./src/controllers/siteBlogController";
 import siteFooterController from "./src/controllers/siteFooterController";
-import FeaturesAllInController from "./src/controllers/FeaturesSendManageKeepLoremController";
+import FeaturesAllInController from "./src/controllers/FeaturesAllInController";
 import FeaturesSendManageKeepLoremController from "./src/controllers/FeaturesSendManageKeepLoremController";
 import FeaturesAllIn2Controller from "./src/controllers/FeaturesAllIn2Controller";
 import FeaturesChooseYourCardController from "./src/controllers/FeaturesChooseYourCard";
