@@ -18,7 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "paths": {
+      "@typings/*": ["./../typings/*"]
+    }
   },
-  "include": ["src", "src/components/SiteOneApp/SiteOneApp.tsx"]
+  "include": [
+    "src",
+    "src/components/SiteOneApp/SiteOneApp.tsx",
+    "./../typings/"
+  ]
 }

@@ -3,14 +3,7 @@ import Vector3 from "./../../assets/Vector-3.svg";
 import BadgeImage from "./../../assets/badge.svg";
 import "./SiteBanking.css";
 import { useEffect, useState } from "react";
-
-type SiteBankingData = {
-  mainTitle: string;
-  description: string;
-  listBenefits: Array<string>;
-  mainButtonText: string;
-  secondButtonText: string;
-};
+import SiteBankingData from "@typings/SiteBankingData";
 
 function SiteBanking() {
   const [templateData, setTemplateData] = useState<SiteBankingData>({

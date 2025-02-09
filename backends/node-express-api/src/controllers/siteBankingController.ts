@@ -1,7 +1,8 @@
+import SiteBankingData from "@typings/SiteBankingData";
 import { Request, Response } from "express";
 
 function siteBankingController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteBankingData = {
     mainTitle: "Banking starts here.",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
@@ -13,7 +14,9 @@ function siteBankingController(request: Request, response: Response) {
     ],
     mainButtonText: "Open Account",
     secondButtonText: "Compare Cards",
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteBankingController;

@@ -2,16 +2,7 @@ import { useEffect, useState } from "react";
 import VectorImage from "./../../assets/Vector.svg";
 import "./SiteMenu.css";
 import { Link } from "react-router";
-
-type SiteMenuData = {
-  siteLogo: string;
-  option1: string;
-  option2: string;
-  option3: string;
-  option4: string;
-  login: string;
-  openAccount: string;
-};
+import SiteMenuData from "@typings/SiteMenuData";
 
 function SiteMenu() {
   // variable section - useState [variavel, setter da variavel]

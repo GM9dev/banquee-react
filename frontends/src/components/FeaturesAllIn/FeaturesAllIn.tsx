@@ -1,18 +1,10 @@
+import "./FeaturesAllIn.css";
 import { useEffect, useState } from "react";
 import Vector3 from "./../../assets/Vector-3.svg";
 import Card3 from "./../../assets/card-3.svg";
 import Card4 from "./../../assets/card-4.svg";
 import Card5 from "./../../assets/card-5.svg";
-import "./FeaturesAllIn.css";
-
-type FeaturesAllInData = {
-  info: string;
-  mainTitle: string;
-  description: string;
-  description2: string;
-  button1: string;
-  button2: string;
-};
+import FeaturesAllInData from "@typings/FeaturesAllInData";
 
 function FeaturesAllIn() {
   const [templateData, setTemplateData] = useState<FeaturesAllInData>({
