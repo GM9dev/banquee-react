@@ -43,9 +43,9 @@ function SiteBanking() {
             <h1 className="banking-title">{templateData.mainTitle}</h1>
             <p className="text-1">{templateData.description}</p>
             <div className="four-benefits">
-              {templateData.listBenefits.map((itemBenefit) => {
+              {templateData.listBenefits.map((itemBenefit, index) => {
                 return (
-                  <div className="text-4">
+                  <div key={index} className="text-4">
                     <img className="badge" src={BadgeImage} />
                     {itemBenefit}
                   </div>

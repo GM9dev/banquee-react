@@ -45,9 +45,9 @@ function SiteStay() {
               <div className="title-1">{templateData.mainTitle}</div>
               <p className="text-3">{templateData.description}</p>
               <div className="list">
-                {templateData.listBenefits.map((itemBenefit) => {
+                {templateData.listBenefits.map((itemBenefit, index) => {
                   return (
-                    <div className="list-margin">
+                    <div key={index} className="list-margin">
                       <img className="badge" src={BadgeImage} />
                       {itemBenefit}
                     </div>
