@@ -1,7 +1,8 @@
+import SitePeopleData from "@typings/SitePeopleData";
 import { Request, Response } from "express";
 
 function sitePeopleController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SitePeopleData = {
     subTitle: "Testimonials",
     mainTitle: "People all over the world use banko.",
     info: "Rated 4.8/5 from over 1000 users",
@@ -43,7 +44,9 @@ function sitePeopleController(request: Request, response: Response) {
         job: "Medical Assistant",
       },
     ],
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default sitePeopleController;

@@ -2,13 +2,7 @@ import { useEffect, useState } from "react";
 import BadgeImage from "./../../assets/badge.svg";
 import GridImage from "./../../assets/grid.svg";
 import "./SiteSeemless.css";
-
-type SiteSeemlessData = {
-  subTitle: string;
-  mainTitle: string;
-  description: string;
-  listBenefits: Array<string>;
-};
+import SiteSeemlessData from "@typings/SiteSeemlessData";
 
 function SiteSeemless() {
   const [templateData, setTemplateData] = useState<SiteSeemlessData>({
@@ -46,9 +40,9 @@ function SiteSeemless() {
           </div>
           <div className="second-block">
             <div className="list-2">
-              {templateData.listBenefits.map((itemBenefit) => {
+              {templateData.listBenefits.map((itemBenefit, index) => {
                 return (
-                  <div className="text-4">
+                  <div key={index} className="text-4">
                     <img className="badge-4" src={BadgeImage} />
                     {itemBenefit}
                   </div>

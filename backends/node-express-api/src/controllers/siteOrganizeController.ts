@@ -1,7 +1,8 @@
+import SiteOrganizeData from "@typings/SiteOrganizeData";
 import { Request, Response } from "express";
 
 function siteOrganizeController(req: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteOrganizeData = {
     subTitle: "Saving Accounts",
     mainTitle: "Organize your money the right way",
     description:
@@ -29,7 +30,9 @@ function siteOrganizeController(req: Request, response: Response) {
         price: "100$",
       },
     ],
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteOrganizeController;

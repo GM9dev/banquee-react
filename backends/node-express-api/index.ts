@@ -9,14 +9,14 @@ import siteStayController from "./src/controllers/siteStayController";
 import siteSeemlessController from "./src/controllers/siteSeemlessController";
 import sitePerfectController from "./src/controllers/sitePerfectController";
 import sitePeopleController from "./src/controllers/sitePeopleController";
-import siteOneApp2Controller from "./src/siteOneApp2Controller";
+import siteOneApp2Controller from "./src/controllers/siteOneApp2Controller";
 import siteNeedController from "./src/controllers/siteNeedController";
 import siteBlogController from "./src/controllers/siteBlogController";
 import siteFooterController from "./src/controllers/siteFooterController";
-import FeaturesAllInController from "./src/controllers/FeaturesAllInController";
-import FeaturesSendManageKeepLoremController from "./src/controllers/FeaturesSendManageKeepLoremController";
-import FeaturesAllIn2Controller from "./src/controllers/FeaturesAllIn2Controller";
-import FeaturesChooseYourCardController from "./src/controllers/FeaturesChooseYourCard";
+import featuresAllInController from "./src/controllers/featuresAllInController";
+import featuresSendManageKeepLoremController from "./src/controllers/featuresSendManageKeepLoremController";
+import featuresAllIn2Controller from "./src/controllers/featuresAllIn2Controller";
+import featuresChooseYourCardController from "./src/controllers/featuresChooseYourCardController";
 
 const server = express();
 
@@ -46,13 +46,13 @@ server.post("/site-one-app-2", siteOneApp2Controller);
 server.post("/site-need", siteNeedController);
 server.post("/site-blog", siteBlogController);
 server.post("/site-footer", siteFooterController);
-server.post("/features-all-in", FeaturesAllInController);
+server.post("/features-all-in", featuresAllInController);
 server.post(
   "/features-send-manage-keep-lorem",
-  FeaturesSendManageKeepLoremController
+  featuresSendManageKeepLoremController
 );
-server.post("/features-all-in-2", FeaturesAllIn2Controller);
-server.post("/features-choose-your-card", FeaturesChooseYourCardController);
+server.post("/features-all-in-2", featuresAllIn2Controller);
+server.post("/features-choose-your-card", featuresChooseYourCardController);
 
 server.listen(port, () => {
   console.log(`Example server listening on port ${port}`);

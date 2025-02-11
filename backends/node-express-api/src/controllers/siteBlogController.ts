@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
+import SiteBlogData from "@typings/SiteBlogData";
 
 function siteBlogController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteBlogData = {
     title: "Blog",
     options: "All Articles",
     boxes: [
@@ -27,7 +28,8 @@ function siteBlogController(request: Request, response: Response) {
         link2: "Technology",
       },
     ],
-  });
+  };
+  response.status(200).json(data);
 }
 
 export default siteBlogController;

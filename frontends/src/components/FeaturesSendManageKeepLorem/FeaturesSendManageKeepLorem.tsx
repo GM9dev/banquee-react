@@ -5,21 +5,7 @@ import App6 from "./../../assets/app-6.svg";
 import App7 from "./../../assets/app-7.svg";
 import Badge from "./../../assets/badge.svg";
 import { useEffect, useState } from "react";
-
-type FeaturesSendManageKeepLoremData = {
-  info: string;
-  info2: string;
-  info3: string;
-  info4: string;
-  title: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  text: string;
-  option1: string;
-  option2: string;
-  option3: string;
-};
+import FeaturesSendManageKeepLoremData from "@typings/FeaturesSendManageKeepLoremData";
 
 function FeaturesSendManageKeepLorem() {
   const [templateData, setTemplateData] =

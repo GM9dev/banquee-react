@@ -7,20 +7,7 @@ import Grid4 from "./../../assets/grid-4.svg";
 import Grid5 from "./../../assets/grid-5.svg";
 import Grid6 from "./../../assets/grid-6.svg";
 import { useEffect, useState } from "react";
-
-type FeaturesAllIn2Data = {
-  mainTitle: string;
-  mainText: string;
-  mainText2: string;
-  subTitle1: string;
-  subTitle2: string;
-  subTitle3: string;
-  subTitle4: string;
-  subTitle5: string;
-  text1: string;
-  text2: string;
-  subtext: string;
-};
+import FeaturesAllIn2Data from "@typings/FeaturesAllIn2Data";
 
 function FeaturesAllIn2() {
   const [templateData, setTemplateData] = useState<FeaturesAllIn2Data>({

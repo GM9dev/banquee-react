@@ -1,7 +1,8 @@
+import SiteNeedData from "@typings/SiteNeedData";
 import { Request, Response } from "express";
 
 function siteNeedController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteNeedData = {
     mainTitle: "Need help?",
     contactPhoneNumber: "+49 176 123 456",
     contactNumber: "Support Hotline",
@@ -23,7 +24,9 @@ function siteNeedController(request: Request, response: Response) {
       },
       { question: "Can I have two Banko accounts?", answer: "" },
     ],
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteNeedController;

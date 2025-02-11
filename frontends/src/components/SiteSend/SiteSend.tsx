@@ -2,12 +2,7 @@ import Transactions2Image from "./../../assets/transactions-2.svg";
 import Badge8Image from "./../../assets/badge-8.svg";
 import "./SiteSend.css";
 import { useState, useEffect } from "react";
-
-type SiteSendData = {
-  mainTitle: string;
-  description: string;
-  listBenefits: Array<string>;
-};
+import SiteSendData from "@typings/SiteSendData";
 
 function SiteSend() {
   const [templateData, setTemplateData] = useState<SiteSendData>({
@@ -42,9 +37,9 @@ function SiteSend() {
               </div>
             </div>
             <div className="three-ben">
-              {templateData.listBenefits.map((itemBenefit) => {
+              {templateData.listBenefits.map((itemBenefit, index) => {
                 return (
-                  <div className="text-4">
+                  <div key={index} className="text-4">
                     <img className="img-ben" src={Badge8Image} /> {itemBenefit}
                   </div>
                 );

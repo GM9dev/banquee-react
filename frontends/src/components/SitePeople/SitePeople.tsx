@@ -2,13 +2,7 @@ import RatingImage from "./../../assets/rating.svg";
 import Badge9Image from "./../../assets/badge-9.svg";
 import "./SitePeople.css";
 import { useState, useEffect } from "react";
-
-type SitePeopleData = {
-  subTitle: string;
-  mainTitle: string;
-  info: string;
-  boxes: Array<{ title: string; text: string; name: string; job: string }>;
-};
+import SitePeopleData from "@typings/SitePeopleData";
 
 function SitePeople() {
   const [templateData, setTemplateData] = useState<SitePeopleData>({
@@ -50,7 +44,7 @@ function SitePeople() {
         <div className="block-9">
           {templateData.boxes.map((item, index) => {
             return (
-              <div className={`size size-${index + 1}`}>
+              <div key={index} className={`size size-${index + 1}`}>
                 <img className="rating" src={RatingImage} />
                 <div className="title-3">{item.title}</div>
                 <div className="distance-3">

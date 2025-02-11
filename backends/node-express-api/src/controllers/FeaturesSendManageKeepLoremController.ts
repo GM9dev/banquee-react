@@ -1,10 +1,11 @@
-import { Request, response, Response } from "express";
+import FeaturesSendManageKeepLoremData from "@typings/FeaturesSendManageKeepLoremData";
+import { Request, Response } from "express";
 
 function featuresSendManageKeepLoremController(
   request: Request,
   response: Response
 ) {
-  response.status(200).json({
+  const data: FeaturesSendManageKeepLoremData = {
     info: "Transactions",
     info2: "Cards",
     info3: "Advanced Statistics",
@@ -17,7 +18,9 @@ function featuresSendManageKeepLoremController(
     option1: "Malesuada Ipsum",
     option2: "Vestibulum",
     option3: "Parturient Lorem",
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default featuresSendManageKeepLoremController;

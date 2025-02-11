@@ -3,12 +3,7 @@ import Grid3Image from "./../../assets/grid-3.svg";
 import Badge10Image from "./../../assets/badge-10.svg";
 import "./SiteOneApp2.css";
 import { useState, useEffect } from "react";
-
-type SiteOneApp2Data = {
-  mainTitle: string;
-  description: string;
-  listBenefits: Array<string>;
-};
+import SiteOneApp2Data from "@typings/SiteOneApp2Data";
 
 function SiteOneApp2() {
   const [templateData, setTemplateData] = useState<SiteOneApp2Data>({
@@ -38,9 +33,9 @@ function SiteOneApp2() {
           <div className="app-text-2">{templateData.mainTitle}</div>
           <div className="text-4">{templateData.description}</div>
           <div className="four-benefits">
-            {templateData.listBenefits.map((itemBenefit) => {
+            {templateData.listBenefits.map((itemBenefit, index) => {
               return (
-                <div className="text-features">
+                <div key={index} className="text-features">
                   <img className="badge" src={Badge10Image} />
                   {itemBenefit}
                 </div>

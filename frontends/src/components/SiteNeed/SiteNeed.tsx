@@ -5,21 +5,7 @@ import Badge12Image from "./../../assets/badge-12.svg";
 import Badge11Image from "./../../assets/badge-11.svg";
 import "./SiteNeed.css";
 import { useState, useEffect } from "react";
-
-type FAQListType = {
-  answer: string;
-  question: string;
-};
-
-type SiteNeedData = {
-  mainTitle: string;
-  contactPhoneNumber: string;
-  contactNumber: string;
-  email: string;
-  contactEmail: string;
-  option: string;
-  faqList: FAQListType[];
-};
+import SiteNeedData from "@typings/SiteNeedData";
 
 function SiteNeed() {
   const [templateData, setTemplateData] = useState<SiteNeedData>({
@@ -72,9 +58,9 @@ function SiteNeed() {
             </div>
           </section>
           <section className="block-12">
-            {templateData.faqList.map((item) => {
+            {templateData.faqList.map((item, index) => {
               return (
-                <div className="distance-4 padding border-bottom">
+                <div key={index} className="distance-4 padding border-bottom">
                   <div className="item-header">
                     <div className="info distance-1">{item.question}</div>
                     <img

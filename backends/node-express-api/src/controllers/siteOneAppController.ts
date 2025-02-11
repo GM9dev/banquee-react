@@ -1,7 +1,8 @@
+import SiteOneAppData from "@typings/SiteOneAppData";
 import { Request, Response } from "express";
 
 function siteOneAppController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteOneAppData = {
     mainTitle: "One app. One banking.",
     appBoxes: [
       {
@@ -35,7 +36,9 @@ function siteOneAppController(request: Request, response: Response) {
         image: "/badge-7.svg",
       },
     ],
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteOneAppController;

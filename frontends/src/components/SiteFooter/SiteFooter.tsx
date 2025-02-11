@@ -1,17 +1,6 @@
 import { useState, useEffect } from "react";
 import "./SiteFooter.css";
-
-type SiteFooterData = {
-  sitelogo: string;
-  boxes: Array<{
-    title: string;
-    option1: string;
-    option2: string;
-    option3: string;
-  }>;
-  lastWord1: string;
-  lastWord2: string;
-};
+import SiteFooterData from "@typings/SiteFooterData";
 
 function SiteFooter() {
   const [templateData, setTemplateData] = useState<SiteFooterData>({
@@ -43,9 +32,9 @@ function SiteFooter() {
             <div className="nav-left">{templateData.sitelogo}</div>
           </section>
           <section className="block-16">
-            {templateData.boxes.map((itemBoxes) => {
+            {templateData.boxes.map((itemBoxes, index) => {
               return (
-                <div className="size-8">
+                <div key={index} className="size-8">
                   <div className="name distance-1">{itemBoxes.title}</div>
                   <div className="text-features color">{itemBoxes.option1}</div>
                   <div className="text-features color distance-7">

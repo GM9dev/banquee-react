@@ -35,9 +35,9 @@ function SiteOneApp() {
           <section className="first-block-3">
             <div className="title-h2">{templateData.mainTitle}</div>
             <div className="six-features">
-              {templateData.appBoxes.map((itemBoxes) => {
+              {templateData.appBoxes.map((itemBoxes, index) => {
                 return (
-                  <div className="app-boxes">
+                  <div key={index} className="app-boxes">
                     <img className="images" src={itemBoxes.image} />
                     <div className="app-titles">{itemBoxes.title}</div>
                     <div className="text-features">{itemBoxes.desc}</div>

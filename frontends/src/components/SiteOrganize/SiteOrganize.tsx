@@ -2,14 +2,7 @@ import Frame85Image from "./../../assets/Frame 8-5.svg";
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteOrganize.css";
 import { useEffect, useState } from "react";
-
-type SiteOrganizeData = {
-  subTitle: string;
-  mainTitle: string;
-  description: string;
-  options: string;
-  boxes: Array<{ image: string; goals: string; price: string }>;
-};
+import SiteOrganizeData from "@typings/SiteOrganizeData";
 
 function SiteOrganize() {
   const [templateData, setTemplateData] = useState<SiteOrganizeData>({
@@ -51,9 +44,9 @@ function SiteOrganize() {
           </section>
         </div>
         <div className="items">
-          {templateData.boxes.map((itemBoxes) => {
+          {templateData.boxes.map((itemBoxes, index) => {
             return (
-              <div>
+              <div key={index}>
                 <img src={itemBoxes.image} />
                 <div className="info">{itemBoxes.goals}</div>
                 <div className="money">{itemBoxes.price}</div>

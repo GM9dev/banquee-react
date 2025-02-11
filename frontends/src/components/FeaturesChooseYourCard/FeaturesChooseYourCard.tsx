@@ -4,24 +4,7 @@ import Card9 from "./../../assets/card-9.svg";
 import Card10 from "./../../assets/card-10.svg";
 import Card11 from "./../../assets/card-10.svg";
 import Component from "./../../assets/Component 2.svg";
-
-type FeaturesChooseYourCardData = {
-  subtTitle: string;
-  mainTitle: string;
-  mainText1: string;
-  mainText2: string;
-  info1: string;
-  subInfo: string;
-  info2: string;
-  info3: string;
-  title1: string;
-  price1: string;
-  title2: string;
-  price2: string;
-  title3: string;
-  text1: string;
-  text2: string;
-};
+import FeaturesChooseYourCardData from "@typings/FeaturesChooseYourCardData";
 
 function FeaturesChooseYourCard() {
   const [templateData, setTemplateData] = useState<FeaturesChooseYourCardData>({

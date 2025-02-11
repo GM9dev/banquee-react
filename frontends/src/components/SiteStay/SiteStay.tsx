@@ -3,14 +3,7 @@ import Vector3Image from "./../../assets/Vector-3.svg";
 import BadgeImage from "./../../assets/badge.svg";
 import "./SiteStay.css";
 import { useEffect, useState } from "react";
-
-type SiteStayData = {
-  subTitle: string;
-  mainTitle: string;
-  description: string;
-  listBenefits: Array<string>;
-  options: string;
-};
+import SiteStayData from "@typings/SiteStayData";
 
 function SiteStay() {
   const [templateData, setTemplateData] = useState<SiteStayData>({

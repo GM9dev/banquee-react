@@ -1,18 +1,7 @@
 import Vector3Image from "./../../assets/Vector-3.svg";
 import "./SiteBlog.css";
 import { useState, useEffect } from "react";
-
-type SiteBlogData = {
-  title: string;
-  options: string;
-  boxes: Array<{
-    image: string;
-    title: string;
-    text: string;
-    link1: string;
-    link2: string;
-  }>;
-};
+import SiteBlogData from "@typings/SiteBlogData";
 
 function SiteBlog() {
   const [templateData, setTemplateData] = useState<SiteBlogData>({
@@ -47,9 +36,9 @@ function SiteBlog() {
             </div>
           </section>
           <section className="images-2">
-            {templateData.boxes.map((itemBoxes) => {
+            {templateData.boxes.map((itemBoxes, index) => {
               return (
-                <div>
+                <div key={index}>
                   <img className="distance-5" src={itemBoxes.image} />
                   <div className="title-3">{itemBoxes.title}</div>
                   <div className="text-features">{itemBoxes.text}</div>

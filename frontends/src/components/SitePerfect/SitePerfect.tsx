@@ -1,16 +1,7 @@
 import { useEffect, useState } from "react";
 import Cards2Image from "./../../assets/cards-2.svg";
 import "./SitePerfect.css";
-
-type SitePerfectData = {
-  subTitle: string;
-  mainTitle: string;
-  mainTitle2: string;
-  description: string;
-  description2: string;
-  mainButtonText: string;
-  secondButtonText: string;
-};
+import SitePerfectData from "@typings/SitePerfectData";
 
 function SitePerfect() {
   const [templateData, setTemplateData] = useState<SitePerfectData>({

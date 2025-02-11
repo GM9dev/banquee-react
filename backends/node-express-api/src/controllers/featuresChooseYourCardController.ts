@@ -1,10 +1,11 @@
+import FeaturesChooseYourCardData from "@typings/FeaturesChooseYourCardData";
 import { Request, Response } from "express";
 
-function FeaturesChooseYourCardController(
+function featuresChooseYourCardController(
   request: Request,
   response: Response
 ) {
-  response.status(200).json({
+  const data: FeaturesChooseYourCardData = {
     subtTitle: "Accounts",
     mainTitle: "Choose your card.",
     mainText1: "Senectus et netus et malesuada fames ac turpis.",
@@ -20,7 +21,9 @@ function FeaturesChooseYourCardController(
     title3: "per month",
     text1: "Lorem ipsum dolor sit amet,",
     text2: "consectetur adipiscing elit.",
-  });
+  };
+
+  response.status(200).json(data);
 }
 
-export default FeaturesChooseYourCardController;
+export default featuresChooseYourCardController;

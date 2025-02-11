@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
+import SiteFooterData from "@typings/SiteFooterData";
 
 function siteFooterController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteFooterData = {
     sitelogo: "banquee",
     boxes: [
       {
@@ -31,7 +32,9 @@ function siteFooterController(request: Request, response: Response) {
     ],
     lastWord1: "Impressum",
     lastWord2: "Datenschutz",
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteFooterController;

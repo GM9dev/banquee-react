@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import FeaturesAllInData from "@typings/FeaturesAllInData";
 
-function FeaturesAllInController(request: Request, response: Response) {
+function featuresAllInController(request: Request, response: Response) {
   const data: FeaturesAllInData = {
     info: "Features",
     mainTitle: "All in one card.",
@@ -14,4 +14,4 @@ function FeaturesAllInController(request: Request, response: Response) {
   response.status(200).json(data);
 }
 
-export default FeaturesAllInController;
+export default featuresAllInController;

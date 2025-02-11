@@ -1,7 +1,8 @@
+import SiteSeemlessData from "@typings/SiteSeemlessData";
 import { Request, Response } from "express";
 
 function siteSeemlessController(request: Request, response: Response) {
-  response.status(200).json({
+  const data: SiteSeemlessData = {
     subTitle: "Tools",
     mainTitle: "Seemless integration",
     description:
@@ -11,7 +12,9 @@ function siteSeemlessController(request: Request, response: Response) {
       "Fully API interface",
       "Payments worldwide",
     ],
-  });
+  };
+
+  response.status(200).json(data);
 }
 
 export default siteSeemlessController;
