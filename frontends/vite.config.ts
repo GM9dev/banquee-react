@@ -9,4 +9,8 @@ export default defineConfig({
       "@typings": "./../typings/*",
     },
   },
+  server: {
+    port: 5680,
+    host: "0.0.0.0"
+  }
 });
