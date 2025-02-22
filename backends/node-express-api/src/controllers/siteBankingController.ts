@@ -2,6 +2,9 @@ import SiteBankingData from "@typings/SiteBankingData";
 import { Request, Response } from "express";
 
 function siteBankingController(request: Request, response: Response) {
+
+  // TODO: query data from database table "site_bankings" and serialize the data
+
   const data: SiteBankingData = {
     mainTitle: "Banking starts here.",
     description:
