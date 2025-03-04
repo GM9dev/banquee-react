@@ -2,7 +2,6 @@
 
 - docker compose -f docker-compose.yml up
 
-
 ### Commands to migrate
 
 - Enter via terminal in the migration folder
