@@ -44,8 +44,7 @@
 }
 
 .FeaturesAllIn2 .cel {
-  width: 90%;
-  flex: 1;
+  margin-top: 73px;
 }
 
 .FeaturesAllIn2 .text-2:nth-child(2) {

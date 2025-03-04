@@ -1,8 +1,8 @@
 import "./FeaturesAllIn2.css";
 import Cel from "./../../assets/app-9.svg";
-import Card4 from "./../../assets/card-4.svg";
-import Card5 from "./../../assets/card-5.svg";
 import Card6 from "./../../assets/card-6.svg";
+import Card7 from "./../../assets/card-7.svg";
+import Card8 from "./../../assets/card-8.svg";
 import Grid4 from "./../../assets/grid-4.svg";
 import Grid5 from "./../../assets/grid-5.svg";
 import Grid6 from "./../../assets/grid-6.svg";
@@ -58,9 +58,9 @@ function FeaturesAllIn2() {
             <div className="text-4">{templateData.text1}</div>
             <div className="text-4">{templateData.text2}</div>
             <div className="cards-three">
-              <img className="card-6" src={Card4} />
-              <img className="card-7" src={Card5} />
-              <img className="card-8" src={Card6} />
+              <img className="card-6" src={Card6} />
+              <img className="card-7" src={Card7} />
+              <img className="card-8" src={Card8} />
             </div>
           </div>
         </div>
