@@ -3,7 +3,7 @@ import SiteFooterData from "@typings/SiteFooterData";
 
 function siteFooterController(request: Request, response: Response) {
   const data: SiteFooterData = {
-    sitelogo: "banquee",
+    siteLogo: "banquee",
     boxes: [
       {
         title: "About",

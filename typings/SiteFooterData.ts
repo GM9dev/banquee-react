@@ -1,5 +1,5 @@
 export type SiteFooterData = {
-  sitelogo: string;
+  siteLogo: string;
   boxes: Array<{
     title: string;
     option1: string;

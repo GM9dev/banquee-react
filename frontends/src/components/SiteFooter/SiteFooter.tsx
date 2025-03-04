@@ -4,7 +4,7 @@ import SiteFooterData from "@typings/SiteFooterData";
 
 function SiteFooter() {
   const [templateData, setTemplateData] = useState<SiteFooterData>({
-    sitelogo: "",
+    siteLogo: "",
     boxes: [],
     lastWord1: "",
     lastWord2: "",
@@ -29,7 +29,7 @@ function SiteFooter() {
       <div className="banner-content-end">
         <div className="block-15">
           <section>
-            <div className="nav-left">{templateData.sitelogo}</div>
+            <div className="nav-left">{templateData.siteLogo}</div>
           </section>
           <section className="block-16">
             {templateData.boxes.map((itemBoxes, index) => {
