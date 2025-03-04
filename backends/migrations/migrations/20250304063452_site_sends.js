@@ -3,12 +3,14 @@
  * @returns { Promise<void> }
  */
 exports.up = function (knex) {
-  return knex.schema.createTable("site_one_apps", function (table) {
+  return knex.schema.createTable("site_sends", function (table) {
     table.increments();
 
     table.string("main_title");
 
-    table.string("app_boxes");
+    table.string("description");
+
+    table.string("list_benefits");
 
     table.timestamps(true, true);
   });
@@ -19,5 +21,5 @@ exports.up = function (knex) {
  * @returns { Promise<void> }
  */
 exports.down = function (knex) {
-  return knex.schema.dropTableIfExists("site_one_apps");
+  return knex.schema.dropTableIfExists("site_sends");
 };
