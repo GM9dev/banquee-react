@@ -13,7 +13,7 @@ function featuresAllIn2Controller(request: Request, response: Response) {
     subTitle5: "Instant transactions",
     text1: "Lorem ipsum dolor sit amet, consectetur",
     text2: "adipiscing elit, sed do.",
-    subtext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   };
 
   response.status(200).json(data);

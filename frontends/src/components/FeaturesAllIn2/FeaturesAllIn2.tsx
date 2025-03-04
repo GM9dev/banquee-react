@@ -21,7 +21,7 @@ function FeaturesAllIn2() {
     subTitle5: "",
     text1: "",
     text2: "",
-    subtext: "",
+    subText: "",
   });
 
   async function getServerData() {
@@ -67,17 +67,17 @@ function FeaturesAllIn2() {
         <div className="block-two">
           <div className="background size-10">
             <div className="title-3">{templateData.subTitle3}</div>
-            <div className="text-4">{templateData.subtext}</div>
+            <div className="text-4">{templateData.subText}</div>
             <img className="grid-4" src={Grid4} />
           </div>
           <div className="background size-10">
             <div className="title-3">{templateData.subTitle4}</div>
-            <div className="text-4">{templateData.subtext}</div>
+            <div className="text-4">{templateData.subText}</div>
             <img className="grid-5" src={Grid5} />
           </div>
           <div className="background size-10">
             <div className="title-3">{templateData.subTitle5}</div>
-            <div className="text-4">{templateData.subtext}</div>
+            <div className="text-4">{templateData.subText}</div>
             <img className="grid-6" src={Grid6} />
           </div>
         </div>

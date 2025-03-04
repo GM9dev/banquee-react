@@ -9,7 +9,7 @@ export type FeaturesAllIn2Data = {
   subTitle5: string;
   text1: string;
   text2: string;
-  subtext: string;
+  subText: string;
 };
 
 export default FeaturesAllIn2Data;
