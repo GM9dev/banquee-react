@@ -1,0 +1,20 @@
+.CompareTheIdeal.background-color {
+  background-color: #e8f2ee;
+  overflow: hidden;
+}
+
+.CompareTheIdeal .banner-container-128 {
+  padding: 128px 0;
+  position: relative;
+}
+
+.CompareTheIdeal .card-3 {
+  position: absolute;
+  left: 404px;
+}
+
+.CompareTheIdeal .containers {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+}

@@ -2,11 +2,7 @@ import CardImage from "./../../assets/card.svg";
 import AppImage from "./../../assets/app.svg";
 import "./SiteOneApp.css";
 import { useEffect, useState } from "react";
-
-type SiteOneAppData = {
-  mainTitle: string;
-  appBoxes: Array<{ title: string; desc: string; image: string }>;
-};
+import SiteOneAppData from "@typings/SiteOneAppData";
 
 function SiteOneApp() {
   const [templateData, setTemplateData] = useState<SiteOneAppData>({
@@ -62,3 +58,12 @@ export default SiteOneApp;
 // hint bonus: app-boxes are Array<{ title1: string; title2: string; desc: string }>
 // use map to loop throught the app-boxes template
 // google: react map array of objects
+
+/*
+
+type SiteOneAppData = {
+  mainTitle: string;
+  appBoxes: Array<{ title: string; desc: string; image: string }>;
+};
+
+*/

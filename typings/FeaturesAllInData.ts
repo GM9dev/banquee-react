@@ -1,4 +1,5 @@
 export type FeaturesAllInData = {
+  id: number;
   info: string;
   mainTitle: string;
   description: string;

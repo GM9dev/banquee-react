@@ -28,7 +28,7 @@
   border-radius: 6px;
 }
 
-.email-menu .nav-center:nth-child(3) {
+.SiteMenu.email-menu .nav-center:nth-child(3) {
   padding: 8px 12px;
 }
 
@@ -39,6 +39,7 @@
 .SiteMenu.email-menu .nav-right1 {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
+  line-height: 100%;
   color: #5bb5a2;
   padding: 10.5px 32px 10.5px 0;
 }
@@ -46,6 +47,7 @@
 .SiteMenu.email-menu .nav-right2 {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
+  line-height: 100%;
   color: #ffffff;
   background-color: #5bb5a2;
   border-radius: 6px;

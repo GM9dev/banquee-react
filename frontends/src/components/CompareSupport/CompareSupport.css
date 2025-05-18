@@ -1,0 +1,41 @@
+.CompareSupport .rectangle {
+  background-color: #5bb5a2;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.CompareSupport .background-color-2 {
+  background-color: #1a191e;
+  border-radius: 6px;
+  padding: 16px 24px;
+}
+
+.CompareSupport .opacity {
+  opacity: 70%;
+}
+
+.CompareSupport .size {
+  width: 353px;
+  padding-right: 73px;
+}
+
+.CompareSupport .block-three {
+  gap: 96px;
+  display: flex;
+}
+
+.CompareSupport .position-4 {
+  padding-left: 16px;
+}
+
+.CompareSupport .position-4 .opacity {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+}

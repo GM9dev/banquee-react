@@ -1,0 +1,35 @@
+export type ComparePlanData = {
+  plan: string;
+  subInfo: string;
+  price: string;
+  text1: string;
+  text2: string;
+  plan2: string;
+  price2: string;
+  time: string;
+  plan3: string;
+  price3: string;
+  menu1: string;
+  info1: string;
+  text3: string;
+  condition: string;
+  info2: string;
+  info3: string;
+  info4: string;
+  info5: string;
+  info6: string;
+  info7: string;
+  info8: string;
+  info9: string;
+  info10: string;
+  menu2: string;
+  condition2: string;
+  condition3: string;
+  menu3: string;
+  condition4: string;
+  condition5: string;
+  condition6: string;
+  condition7: string;
+};
+
+export default ComparePlanData;

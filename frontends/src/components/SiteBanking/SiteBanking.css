@@ -19,7 +19,7 @@
 }
 
 .SiteBanking .block-1 .text-1 {
-  padding-right: 49px;
+  padding-right: 53px;
   margin-bottom: 32px;
 }
 
@@ -27,7 +27,7 @@
   width: 489px;
 }
 
-.block-1 .text-4 {
+.SiteBanking .block-1 .text-4 {
   display: flex;
   align-items: center;
   flex: 50%;
@@ -43,6 +43,7 @@
 .SiteBanking .green-button {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
+  line-height: 100%;
   color: #ffffff;
   background-color: #5bb5a2;
   border-radius: 6px;

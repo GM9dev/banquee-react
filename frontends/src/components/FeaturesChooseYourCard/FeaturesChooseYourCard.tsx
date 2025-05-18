@@ -59,8 +59,8 @@ function FeaturesChooseYourCard() {
           <div className="block-price">
             <div className="title-2">{templateData.title1}</div>
           </div>
-          <div className="text-features">{templateData.text1}</div>
-          <div className="text-features">{templateData.text2}</div>
+          <div className="text-features color">{templateData.text1}</div>
+          <div className="text-features color">{templateData.text2}</div>
           <img className="cards-padd" src={Card9} />
           <img src={Component} />
         </div>
@@ -68,10 +68,10 @@ function FeaturesChooseYourCard() {
           <div className="info">{templateData.info2}</div>
           <div className="block-price">
             <div className="title-2">{templateData.price1}</div>
-            <div className="text-features">{templateData.title2}</div>
+            <div className="text-features color">{templateData.title2}</div>
           </div>
-          <div className="text-features">{templateData.text1}</div>
-          <div className="text-features">{templateData.text2}</div>
+          <div className="text-features color">{templateData.text1}</div>
+          <div className="text-features color">{templateData.text2}</div>
           <img className="cards-padd" src={Card10} />
           <img src={Component} />
         </div>
@@ -79,10 +79,10 @@ function FeaturesChooseYourCard() {
           <div className="info">{templateData.info3}</div>
           <div className="block-price">
             <div className="title-2">{templateData.price2}</div>
-            <div className="text-features">{templateData.title3}</div>
+            <div className="text-features color">{templateData.title3}</div>
           </div>
-          <div className="text-features">{templateData.text1}</div>
-          <div className="text-features">{templateData.text2}</div>
+          <div className="text-features color">{templateData.text1}</div>
+          <div className="text-features color">{templateData.text2}</div>
           <img className="cards-padd" src={Card11} />
           <img src={Component} />
         </div>

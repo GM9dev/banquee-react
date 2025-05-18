@@ -70,7 +70,7 @@ function SiteNeed() {
                   </div>
 
                   {item.answer !== "" ? (
-                    <div className="text-5 text-features distance-1">
+                    <div className="color text-features distance-1">
                       {item.answer}
                     </div>
                   ) : (

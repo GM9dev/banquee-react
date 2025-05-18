@@ -1,0 +1,36 @@
+.BlogArticle.container-blog {
+  padding-bottom: 160px;
+  max-width: 1222px;
+  margin: 0 auto;
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BlogArticle.container-blog .name {
+  padding-right: 16px;
+}
+
+.BlogArticle .blog-options {
+  display: flex;
+  gap: 16px;
+}
+
+.BlogArticle .images-2 {
+  display: flex;
+  gap: 33px;
+}
+
+.BlogArticle .distance-5 {
+  margin-bottom: 24px;
+}
+
+.BlogArticle .images-2 .text-features {
+  margin: 8px 0 24px 0;
+  padding-right: 18px;
+}
+
+.BlogArticle .block-14 {
+  display: flex;
+  gap: 8px;
+}

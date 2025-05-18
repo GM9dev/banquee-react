@@ -4,6 +4,7 @@ export type FAQListType = {
 };
 
 type SiteNeedData = {
+  id: number;
   mainTitle: string;
   contactPhoneNumber: string;
   contactNumber: string;

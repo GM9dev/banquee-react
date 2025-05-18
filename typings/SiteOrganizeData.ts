@@ -1,4 +1,5 @@
 export type SiteOrganizeData = {
+  id: number;
   subTitle: string;
   mainTitle: string;
   description: string;

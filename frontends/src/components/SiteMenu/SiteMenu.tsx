@@ -7,6 +7,7 @@ import SiteMenuData from "@typings/SiteMenuData";
 function SiteMenu() {
   // variable section - useState [variavel, setter da variavel]
   const [templateData, setTemplateData] = useState<SiteMenuData>({
+    id: 0,
     siteLogo: "",
     option1: "",
     option2: "",
@@ -48,12 +49,14 @@ function SiteMenu() {
           <Link to={"/features"}>{templateData.option1}</Link>
         </div>
         <div className="nav-center">
-          {templateData.option2}
+          <Link to={"/compare"}>{templateData.option2}</Link>
           <img className="vector" src={VectorImage} />
         </div>
-        <div className="nav-center">{templateData.option3}</div>
         <div className="nav-center">
-          {templateData.option4}
+          <Link to={"/support"}>{templateData.option3}</Link>
+        </div>
+        <div className="nav-center">
+          <Link to={"/blog"}>{templateData.option4}</Link>
           <img className="vector" src={VectorImage} />
         </div>
       </div>

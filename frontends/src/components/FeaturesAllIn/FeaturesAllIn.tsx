@@ -37,7 +37,7 @@ function FeaturesAllIn() {
         <div className="title-h2">{templateData.mainTitle}</div>
         <div className="text-2">{templateData.description}</div>
         <div className="text-2">{templateData.description2}</div>
-        <div className="buttons">
+        <div className="buttons-feature">
           <div className="green-button">{templateData.button1}</div>
           <div className="compare-cards">
             {templateData.button2}

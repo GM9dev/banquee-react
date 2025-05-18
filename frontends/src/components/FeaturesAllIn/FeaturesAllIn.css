@@ -25,7 +25,7 @@
   letter-spacing: -3px;
 }
 
-.FeaturesAllIn .buttons {
+.FeaturesAllIn .buttons-feature {
   display: flex;
   gap: 32px;
   align-items: center;

@@ -1,4 +1,5 @@
 export type FeaturesChooseYourCardData = {
+  id: number;
   subtTitle: string;
   mainTitle: string;
   mainText1: string;

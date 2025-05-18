@@ -4,7 +4,7 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("site_bankings", function (table) {
-    table.increments(); // criar coluna ID
+    table.increments("id"); // criar coluna ID
 
     table.string("main_title");
 

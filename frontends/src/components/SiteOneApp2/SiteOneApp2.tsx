@@ -30,7 +30,7 @@ function SiteOneApp2() {
     <div className="SiteOneApp2 banner-container">
       <div className="banner-content">
         <section className="block-10">
-          <div className="app-text-2">{templateData.mainTitle}</div>
+          <div className="title-1">{templateData.mainTitle}</div>
           <div className="text-4">{templateData.description}</div>
           <div className="four-benefits">
             {templateData.listBenefits.map((itemBenefit, index) => {

@@ -1,4 +1,5 @@
 export type FeaturesSendManageKeepLoremData = {
+  id: number;
   info: string;
   info2: string;
   info3: string;

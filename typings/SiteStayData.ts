@@ -1,4 +1,5 @@
 export type SiteStayData = {
+  id: number;
   subTitle: string;
   mainTitle: string;
   description: string;

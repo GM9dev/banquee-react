@@ -1,22 +1,44 @@
 import { Request, Response } from "express";
 import FeaturesAllIn2Data from "@typings/FeaturesAllIn2Data";
+import knex from "knex";
 
-function featuresAllIn2Controller(request: Request, response: Response) {
-  const data: FeaturesAllIn2Data = {
-    mainTitle: "All in one bank. Really.",
-    mainText: "Senectus et netus et malesuada fames ac turpis.",
-    mainText2: "Sagittis vitae et leo duis ut diam.",
-    subTitle1: "Statistics",
-    subTitle2: "Cards",
-    subTitle3: "Easy integration",
-    subTitle4: "Saving accounts",
-    subTitle5: "Instant transactions",
-    text1: "Lorem ipsum dolor sit amet, consectetur",
-    text2: "adipiscing elit, sed do.",
-    subText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  };
+async function featuresAllIn2Controller(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  response.status(200).json(data);
+  const result = await dbConn<FeaturesAllIn2Data>("features_all_ins_2")
+    .select({
+      id: "id",
+      mainTitle: "main_title",
+      mainText: "main_text",
+      mainText2: "main_text_2",
+      subTitle1: "sub_title_1",
+      subTitle2: "sub_title_2",
+      subTitle3: "sub_title_3",
+      subTitle4: "sub_title_4",
+      subTitle5: "sub_title_5",
+      text1: "text_1",
+      text2: "text_2",
+      subText: "sub_text",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: FeaturesAllIn2Data = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default featuresAllIn2Controller;

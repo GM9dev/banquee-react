@@ -1,10 +1,41 @@
 import { Request, Response } from "express";
 import SiteBlogData from "@typings/SiteBlogData";
+import knex from "knex";
 
-function siteBlogController(request: Request, response: Response) {
-  const data: SiteBlogData = {
-    title: "Blog",
-    options: "All Articles",
+async function siteBlogController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
+
+  const result = await dbConn<SiteBlogData>("site_blogs")
+    .select({
+      id: "id",
+      title: "title",
+      options: "options",
+      boxes: "boxes",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteBlogData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
+}
+
+export default siteBlogController;
+
+/*
     boxes: [
       {
         image: "/image.svg",
@@ -33,3 +64,5 @@ function siteBlogController(request: Request, response: Response) {
 }
 
 export default siteBlogController;
+
+*/

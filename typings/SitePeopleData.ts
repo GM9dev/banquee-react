@@ -1,4 +1,5 @@
 export type SitePeopleData = {
+  id: number;
   subTitle: string;
   mainTitle: string;
   info: string;

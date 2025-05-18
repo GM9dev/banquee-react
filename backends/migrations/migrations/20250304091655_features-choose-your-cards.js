@@ -6,9 +6,9 @@ exports.up = function (knex) {
   return knex.schema.createTable(
     "features-choose-your-cards",
     function (table) {
-      table.increments();
+      table.increments("id");
 
-      table.string("subt_title");
+      table.string("sub_title");
 
       table.string("main_title");
 

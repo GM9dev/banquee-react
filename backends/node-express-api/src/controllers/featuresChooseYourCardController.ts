@@ -1,29 +1,53 @@
 import FeaturesChooseYourCardData from "@typings/FeaturesChooseYourCardData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function featuresChooseYourCardController(
+async function featuresChooseYourCardController(
   request: Request,
   response: Response
 ) {
-  const data: FeaturesChooseYourCardData = {
-    subtTitle: "Accounts",
-    mainTitle: "Choose your card.",
-    mainText1: "Senectus et netus et malesuada fames ac turpis.",
-    mainText2: "Sagittis vitae et leo duis ut diam.",
-    info1: "Basic",
-    subInfo: "Popular",
-    info2: "Premium",
-    info3: "Gold",
-    title1: "Free",
-    price1: "$5",
-    title2: "per month",
-    price2: "$10",
-    title3: "per month",
-    text1: "Lorem ipsum dolor sit amet,",
-    text2: "consectetur adipiscing elit.",
-  };
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  response.status(200).json(data);
+  const result = await dbConn<FeaturesChooseYourCardData>(
+    "features-choose-your-cards"
+  )
+    .select({
+      id: "id",
+      subtTitle: "subt_title",
+      mainTitle: "main_title",
+      mainText1: "main_text_1",
+      mainText2: "main_text_2",
+      info1: "info_1",
+      subInfo: "sub_info",
+      info2: "info_2",
+      info3: "info_3",
+      title1: "title_1",
+      price1: "price_1",
+      title2: "title_2",
+      price2: "price_2",
+      title3: "title_3",
+      text1: "text_1",
+      text2: "text_2",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: FeaturesChooseYourCardData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default featuresChooseYourCardController;

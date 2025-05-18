@@ -1,17 +1,38 @@
 import SiteStayData from "@typings/SiteStayData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function siteStayController(request: Request, response: Response) {
-  const data: SiteStayData = {
-    subTitle: "Notifications",
-    mainTitle: "Stay notified",
-    description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    listBenefits: ["Malesuada Ipsum", "Vestibulum", "Parturient Lorem"],
-    options: "Compare Cards",
-  };
+async function siteStayController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  response.status(200).json(data);
+  const result = await dbConn<SiteStayData>("site_stays")
+    .select({
+      id: "id",
+      subTitle: "sub_title",
+      mainTitle: "main_title",
+      description: "option_2",
+      listBenefits: "list_benefits",
+      options: "options",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteStayData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default siteStayController;

@@ -1,20 +1,37 @@
 import SiteSeemlessData from "@typings/SiteSeemlessData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function siteSeemlessController(request: Request, response: Response) {
-  const data: SiteSeemlessData = {
-    subTitle: "Tools",
-    mainTitle: "Seemless integration",
-    description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-    listBenefits: [
-      "Secure and encrypted integration",
-      "Fully API interface",
-      "Payments worldwide",
-    ],
-  };
+async function siteSeemlessController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  response.status(200).json(data);
+  const result = await dbConn<SiteSeemlessData>("sites_seemless")
+    .select({
+      id: "id",
+      subTitle: "sub_title",
+      mainTitle: "main_title",
+      description: "description",
+      listBenefits: "list_benefits",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteSeemlessData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default siteSeemlessController;

@@ -1,4 +1,5 @@
 export type SitePerfectData = {
+  id: number;
   subTitle: string;
   mainTitle: string;
   mainTitle2: string;

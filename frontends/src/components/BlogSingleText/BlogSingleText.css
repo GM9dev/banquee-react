@@ -1,0 +1,62 @@
+.BlogSingleText.banner-center {
+  padding: 96px 0 160px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.BlogSingleText .center-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BlogSingleText .flex {
+  display: flex;
+  gap: 16px;
+}
+
+.BlogSingleText .font-app {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 180%;
+  color: #5bb5a2;
+  background-color: #e8f2ee;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+}
+
+.BlogSingleText .title-1:nth-child(3) {
+  margin-bottom: 32px;
+}
+
+.BlogSingleText .text-2:nth-child(6) {
+  margin-bottom: 64px;
+}
+
+.BlogSingleText .image-7 {
+  padding-bottom: 32px;
+}
+
+.BlogSingleText .title-3 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.BlogSingleText .name {
+  padding: 64px 0 16px 0;
+}
+
+.BlogSingleText .center-content:nth-child(3) {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.BlogSingleText .center-content:nth-child(5) {
+  max-width: 600px;
+  margin: 0 auto;
+}

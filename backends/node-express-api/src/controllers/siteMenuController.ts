@@ -1,18 +1,40 @@
 import { Request, Response } from "express";
 import SiteMenuData from "@typings/SiteMenuData";
+import knex from "knex";
 
-function siteMenuController(req: Request, res: Response) {
-  const data: SiteMenuData = {
-    siteLogo: "banquee",
-    option1: "Features",
-    option2: "Compare",
-    option3: "Support",
-    option4: "Blog",
-    login: "Login",
-    openAccount: "Open Account",
-  };
+async function siteMenuController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  res.status(200).json(data);
+  const result = await dbConn<SiteMenuData>("menu_infos")
+    .select({
+      id: "id",
+      siteLogo: "site_logo",
+      option1: "option_1",
+      option2: "option_2",
+      option3: "option_3",
+      option4: "option_4",
+      login: "login",
+      openAccount: "open_account",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteMenuData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default siteMenuController;

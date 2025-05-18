@@ -1,0 +1,24 @@
+.BlogRelated .block-13 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.BlogRelated .images-2 {
+  display: flex;
+  gap: 33px;
+}
+
+.BlogRelated .distance-5 {
+  margin-bottom: 24px;
+}
+
+.BlogRelated .images-2 .text-features {
+  margin: 8px 0 24px 0;
+  padding-right: 18px;
+}
+
+.BlogRelated .block-14 {
+  display: flex;
+  gap: 8px;
+}

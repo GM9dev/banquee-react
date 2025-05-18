@@ -1,0 +1,55 @@
+.DropdownFeaturesCard.banner-container-96 {
+  padding-bottom: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.DropdownFeaturesCard .block-plans {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 32px 0;
+}
+
+.DropdownFeaturesCard .block-popular {
+  display: flex;
+  gap: 8px;
+}
+
+.DropdownFeaturesCard .cards-padd {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  width: 241.5px;
+}
+
+.DropdownFeaturesCard .block-columm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DropdownFeaturesCard .first-section .info {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.DropdownFeaturesCard .green-button-2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 180%;
+  color: #5bb5a2;
+  background-color: #e8f2ee;
+  border-radius: 4px;
+  width: 56px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.DropdownFeaturesCard .money {
+  padding-top: 4px;
+}

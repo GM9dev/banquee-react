@@ -1,0 +1,98 @@
+.ComparePlan.banner-container-96 {
+  padding-bottom: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.ComparePlan .block-plans {
+  display: flex;
+  gap: 64px;
+  justify-content: end;
+}
+
+.ComparePlan .green-button-2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 180%;
+  color: #5bb5a2;
+  background-color: #e8f2ee;
+  border-radius: 4px;
+  width: 56px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.ComparePlan .block-popular {
+  display: flex;
+  gap: 8px;
+}
+
+.ComparePlan .block-price {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  padding-bottom: 8px;
+}
+
+.ComparePlan .title-2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: bold;
+  padding-top: 24px;
+}
+
+.ComparePlan .cards-padd {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 290.67px;
+}
+
+.ComparePlan .component {
+  width: 290.67px;
+}
+
+.ComparePlan .block-columm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ComparePlan .first-section .info {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ComparePlan .space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  gap: 64px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ComparePlan .position-2 {
+  padding-left: 16px;
+  width: 336px;
+}
+
+.ComparePlan .space-between .text-features {
+  width: 290.67px;
+  justify-content: center;
+  display: flex;
+}
+
+.ComparePlan .position-3 {
+  width: 290.67px;
+  justify-content: center;
+  display: flex;
+}
+
+.ComparePlan .position-1 {
+  width: 336px;
+}

@@ -28,6 +28,8 @@
 .SiteNeed .compare-cards-3 {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
   color: #5bb5a2;
   display: flex;
   cursor: pointer;
@@ -56,9 +58,4 @@
 
 .SiteNeed .padding {
   padding-top: 32px;
-}
-
-.SiteNeed .text-5 {
-  color: #1a191e;
-  opacity: 50%;
 }

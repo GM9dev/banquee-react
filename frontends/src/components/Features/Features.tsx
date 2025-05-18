@@ -6,6 +6,7 @@ import FeaturesAllIn2 from "../FeaturesAllIn2/FeaturesAllIn2";
 import FeaturesChooseYourCard from "../FeaturesChooseYourCard/FeaturesChooseYourCard";
 import SiteOneApp2 from "../SiteOneApp2/SiteOneApp2";
 import SiteNeed from "../SiteNeed/SiteNeed";
+import "./Features.css";
 
 function Features() {
   return (

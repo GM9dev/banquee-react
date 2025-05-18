@@ -1,0 +1,20 @@
+.SupportTheIdeal.background-color {
+  background-color: #e8f2ee;
+  overflow: hidden;
+}
+
+.SupportTheIdeal .banner-container-128 {
+  padding: 128px 0;
+  position: relative;
+}
+
+.SupportTheIdeal .app-10 {
+  position: absolute;
+  left: 404px;
+}
+
+.SupportTheIdeal .containers {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+}

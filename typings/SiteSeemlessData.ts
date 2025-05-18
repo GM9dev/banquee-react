@@ -1,4 +1,5 @@
 export type SiteSeemlessData = {
+  id: number;
   subTitle: string;
   mainTitle: string;
   description: string;

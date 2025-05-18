@@ -1,26 +1,50 @@
 import FeaturesSendManageKeepLoremData from "@typings/FeaturesSendManageKeepLoremData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function featuresSendManageKeepLoremController(
+async function featuresSendManageKeepLoremController(
   request: Request,
   response: Response
 ) {
-  const data: FeaturesSendManageKeepLoremData = {
-    info: "Transactions",
-    info2: "Cards",
-    info3: "Advanced Statistics",
-    info4: "Saving Accounts",
-    title: "Send & receive money instantly",
-    title2: "Manage your cards",
-    title3: "Keep control over your money",
-    title4: "Lorem et ipsum dolor",
-    text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    option1: "Malesuada Ipsum",
-    option2: "Vestibulum",
-    option3: "Parturient Lorem",
-  };
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
 
-  response.status(200).json(data);
+  const result = await dbConn<FeaturesSendManageKeepLoremData>(
+    "features_send_manage_keep_lorems"
+  )
+    .select({
+      id: "id",
+      info: "info",
+      info2: "info_2",
+      info3: "info_3",
+      info4: "info_4",
+      title: "title",
+      title2: "title_2",
+      title3: "title_3",
+      title4: "title_4",
+      text: "text",
+      option1: "option_1",
+      option2: "option_2",
+      option3: "option_3",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: FeaturesSendManageKeepLoremData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
 }
 
 export default featuresSendManageKeepLoremController;

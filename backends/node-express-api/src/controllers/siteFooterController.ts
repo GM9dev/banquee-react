@@ -1,9 +1,42 @@
 import { Request, Response } from "express";
 import SiteFooterData from "@typings/SiteFooterData";
+import knex from "knex";
 
-function siteFooterController(request: Request, response: Response) {
-  const data: SiteFooterData = {
-    siteLogo: "banquee",
+async function siteFooterController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
+
+  const result = await dbConn<SiteFooterData>("site_footers")
+    .select({
+      id: "id",
+      siteLogo: "site_logo",
+      boxes: "boxes",
+      lastWord1: "last_word_1",
+      lastWord2: "last_word_2",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteFooterData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
+}
+
+export default siteFooterController;
+
+/*
     boxes: [
       {
         title: "About",
@@ -38,3 +71,5 @@ function siteFooterController(request: Request, response: Response) {
 }
 
 export default siteFooterController;
+
+*/

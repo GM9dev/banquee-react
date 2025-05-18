@@ -4,7 +4,7 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("site_one_apps_2", function (table) {
-    table.increments();
+    table.increments("id");
 
     table.string("main_title");
 

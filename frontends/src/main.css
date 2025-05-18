@@ -42,9 +42,15 @@ body,
   align-items: center;
 }
 
+.color {
+  color: #1a191e;
+  opacity: 50%;
+}
+
 .compare-cards {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
+  line-height: 100%;
   color: #5bb5a2;
   cursor: pointer;
   display: flex;
@@ -53,6 +59,14 @@ body,
 
 .distance-1 {
   margin-bottom: 32px;
+}
+
+.font {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 180%;
+  background-color: #f8f8f8;
+  border-radius: 4px;
 }
 
 .four-benefits {
@@ -91,7 +105,13 @@ body,
   font-family: "DM Sans", sans-serif;
   font-size: 32px;
   font-weight: bold;
+  line-height: 100%;
   color: #5bb5a2;
+}
+
+.position-1 {
+  display: flex;
+  align-items: center;
 }
 
 .text-1 {
@@ -116,6 +136,11 @@ body,
   font-size: 18px;
   font-weight: 500;
   line-height: 180%;
+}
+
+.text-5 {
+  color: #1a191e;
+  opacity: 50%;
 }
 
 .text-features {

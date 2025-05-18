@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable(
     "features_send_manage_keep_lorems",
     function (table) {
-      table.increments();
+      table.increments("id");
 
       table.string("info");
 

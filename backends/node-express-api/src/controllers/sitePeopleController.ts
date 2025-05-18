@@ -1,12 +1,42 @@
 import SitePeopleData from "@typings/SitePeopleData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function sitePeopleController(request: Request, response: Response) {
-  const data: SitePeopleData = {
-    subTitle: "Testimonials",
-    mainTitle: "People all over the world use banko.",
-    info: "Rated 4.8/5 from over 1000 users",
-    boxes: [
+async function sitePeopleController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
+
+  const result = await dbConn<SitePeopleData>("site_peoples")
+    .select({
+      id: "id",
+      subTitle: "sub_title",
+      mainTitle: "main_title",
+      info: "info",
+      boxes: "boxes",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SitePeopleData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
+}
+
+export default sitePeopleController;
+
+/*   boxes: [
       {
         title: "Sunt qui esse pariatur duis deserunt mollit",
         text: "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
@@ -50,3 +80,5 @@ function sitePeopleController(request: Request, response: Response) {
 }
 
 export default sitePeopleController;
+
+*/

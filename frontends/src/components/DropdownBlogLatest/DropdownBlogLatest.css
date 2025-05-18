@@ -1,0 +1,75 @@
+.DropdownBlogLatest.banner-container-32 {
+  padding: 32px 0;
+  margin-bottom: 133px;
+  background-color: #f8f8f8;
+}
+
+.DropdownBlogLatest .container-one {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.DropdownBlogLatest .left {
+  width: 280px;
+}
+
+.DropdownBlogLatest .left .name {
+  padding-bottom: 32px;
+}
+
+.DropdownBlogLatest .last-images {
+  padding-right: 24px;
+}
+
+.DropdownBlogLatest .all-features {
+  padding-top: 32px;
+}
+
+.DropdownBlogLatest .left .text-features:nth-child(3) {
+  padding: 16px 0;
+}
+
+.DropdownBlogLatest .info {
+  padding-bottom: 32px;
+}
+
+.DropdownBlogLatest .right {
+  width: 1120px;
+}
+
+.DropdownBlogLatest .right-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DropdownBlogLatest .white-backgroud {
+  background-color: #ffffff;
+  display: flex;
+  width: 544px;
+  align-items: center;
+  margin-right: 32px;
+  border-radius: 8px;
+}
+
+.DropdownBlogLatest .grey-background {
+  display: flex;
+  width: 544px;
+  align-items: center;
+}
+
+.DropdownBlogLatest .right-pad .name {
+  padding-right: 18px;
+}
+
+.DropdownBlogLatest .money {
+  padding-top: 4px;
+}
+
+.DropdownBlogLatest .right-block .grey-background:nth-child(3) {
+  padding: 8px 32px 0 0;
+}
+
+.DropdownBlogLatest .right-block .grey-background:nth-child(4) {
+  padding-top: 8px;
+}

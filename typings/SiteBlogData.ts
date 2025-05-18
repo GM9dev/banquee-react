@@ -1,4 +1,5 @@
 export type SiteBlogData = {
+  id: number;
   title: string;
   options: string;
   boxes: Array<{

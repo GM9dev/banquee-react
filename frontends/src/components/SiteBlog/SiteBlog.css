@@ -21,11 +21,3 @@
   display: flex;
   gap: 8px;
 }
-
-.SiteBlog .font {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 180%;
-  background-color: #f8f8f8;
-  border-radius: 4px;
-}

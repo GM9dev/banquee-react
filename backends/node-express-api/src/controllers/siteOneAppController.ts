@@ -1,44 +1,75 @@
-import SiteOneAppData from "@typings/SiteOneAppData";
 import { Request, Response } from "express";
+import SiteOneAppData from "@typings/SiteOneAppData";
+import knex from "knex";
 
-function siteOneAppController(request: Request, response: Response) {
-  const data: SiteOneAppData = {
-    mainTitle: "One app. One banking.",
-    appBoxes: [
-      {
-        title: "Instant transactions",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-2.svg",
+async function siteOneAppController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
+
+  const result = await dbConn<SiteOneAppData>("site_one_apps")
+    .select({
+      id: "id",
+      mainTitle: "main_title",
+      appBoxes: "app_boxes",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteOneAppData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
+}
+
+export default siteOneAppController;
+
+/*
+appBoxes: [
+   {
+     title: "Instant transactions",
+      desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      image: "/badge-2.svg",
+     },
+     {
+      title: "Saving accounts",
+      desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      image: "/badge-3.svg",
+     },
+     {
+      title: "Mobile banking",
+     desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+     image: "/badge-4.svg",
       },
-      {
-        title: "Saving accounts",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-3.svg",
-      },
-      {
-        title: "Mobile banking",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-4.svg",
-      },
-      {
-        title: "Advanced statistics",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-5.svg",
-      },
-      {
-        title: "Virtual cards",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-6.svg",
-      },
-      {
-        title: "Contactless payments",
-        desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
-        image: "/badge-7.svg",
-      },
-    ],
-  };
+     {
+      title: "Advanced statistics",
+      desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+       image: "/badge-5.svg",
+     },
+    {
+      title: "Virtual cards",
+       desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+       image: "/badge-6.svg",
+     },
+     {
+       title: "Contactless payments",
+       desc: "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+       image: "/badge-7.svg",
+     },
+   ],
+ };
 
   response.status(200).json(data);
 }
 
-export default siteOneAppController;
+*/

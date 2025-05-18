@@ -1,38 +1,69 @@
 import SiteOrganizeData from "@typings/SiteOrganizeData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function siteOrganizeController(req: Request, response: Response) {
-  const data: SiteOrganizeData = {
-    subTitle: "Saving Accounts",
-    mainTitle: "Organize your money the right way",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    options: "All features",
-    boxes: [
+async function siteOrganizeController(request: Request, response: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
+  });
+
+  const result = await dbConn<SiteOrganizeData>("site_organizes")
+    .select({
+      id: "id",
+      subTitle: "sub_title",
+      mainTitle: "main_title",
+      description: "description",
+      options: "options",
+      boxes: "boxes",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SiteOrganizeData = result;
+
+    response.status(200).json(data);
+  } else {
+    response.status(200).json({});
+  }
+}
+
+export default siteOrganizeController;
+
+/* boxes: [
       {
-        image: "Frame 8.svg",
-        goals: "New Laptop",
-        price: "400$",
-      },
-      {
-        image: "Frame 8-2.svg",
-        goals: "Dream bike",
-        price: "200$",
-      },
-      {
-        image: "Frame 8-3.svg",
-        goals: "Holiday",
-        price: "14000$",
-      },
-      {
-        image: "Frame 8-4.svg",
-        goals: "Camera",
-        price: "100$",
+       image: "Frame 8.svg",
+       goals: "New Laptop",
+       price: "400$",
+     },
+     {
+       image: "Frame 8-2.svg",
+       goals: "Dream bike",
+       price: "200$",
+     },
+     {
+       image: "Frame 8-3.svg",
+      goals: "Holiday",
+       price: "14000$",
+     },
+     {
+       image: "Frame 8-4.svg",
+      goals: "Camera",
+       price: "100$",
       },
     ],
   };
 
   response.status(200).json(data);
-}
+  }
 
-export default siteOrganizeController;
+  export default siteOrganizeController;
+
+  */
