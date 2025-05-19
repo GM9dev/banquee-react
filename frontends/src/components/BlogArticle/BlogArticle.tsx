@@ -16,17 +16,12 @@ function BlogArticle() {
     option3: "",
     option4: "",
     title1: "",
-    text1: "",
+    text: "",
     title2: "",
-    text2: "",
     title3: "",
-    text3: "",
     title4: "",
-    text4: "",
     title5: "",
-    text5: "",
     title6: "",
-    text6: "",
     app: "",
     product: "",
     technology: "",
@@ -59,7 +54,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image} />
           <div className="title-3">{templateData.title1}</div>
-          <div className="text-features">{templateData.text1}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.app}</div>
             <div className="font">{templateData.technology}</div>
@@ -68,7 +63,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image2} />
           <div className="title-3">{templateData.title2}</div>
-          <div className="text-features">{templateData.text2}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.technology}</div>
           </div>
@@ -76,7 +71,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image3} />
           <div className="title-3">{templateData.title3}</div>
-          <div className="text-features">{templateData.text3}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.app}</div>
             <div className="font">{templateData.product}</div>
@@ -87,7 +82,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image4} />
           <div className="title-3">{templateData.title4}</div>
-          <div className="text-features">{templateData.text4}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.product}</div>
             <div className="font">{templateData.technology}</div>
@@ -96,7 +91,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image5} />
           <div className="title-3">{templateData.title5}</div>
-          <div className="text-features">{templateData.text5}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.app}</div>
           </div>
@@ -104,7 +99,7 @@ function BlogArticle() {
         <div>
           <img className="distance-5" src={Image6} />
           <div className="title-3">{templateData.title6}</div>
-          <div className="text-features">{templateData.text6}</div>
+          <div className="text-features">{templateData.text}</div>
           <div className="block-14">
             <div className="font">{templateData.technology}</div>
           </div>
