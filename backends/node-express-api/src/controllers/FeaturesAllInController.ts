@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import FeaturesAllInData from "@typings/FeaturesAllInData";
 import knex from "knex";
 
-async function featuresAllInController(request: Request, response: Response) {
+async function featuresAllInController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -31,9 +31,9 @@ async function featuresAllInController(request: Request, response: Response) {
   if (result) {
     const data: FeaturesAllInData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

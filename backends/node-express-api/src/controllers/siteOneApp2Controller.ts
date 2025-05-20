@@ -2,7 +2,7 @@ import SiteOneApp2Data from "@typings/SiteOneApp2Data";
 import { Request, Response } from "express";
 import knex from "knex";
 
-async function siteOneApp2Controller(request: Request, response: Response) {
+async function siteOneApp2Controller(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -27,9 +27,9 @@ async function siteOneApp2Controller(request: Request, response: Response) {
   if (result) {
     const data: SiteOneApp2Data = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

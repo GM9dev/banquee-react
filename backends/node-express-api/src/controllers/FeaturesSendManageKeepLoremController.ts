@@ -3,8 +3,8 @@ import { Request, Response } from "express";
 import knex from "knex";
 
 async function featuresSendManageKeepLoremController(
-  request: Request,
-  response: Response
+  req: Request,
+  res: Response
 ) {
   const dbConn = knex({
     client: "mysql2",
@@ -41,9 +41,9 @@ async function featuresSendManageKeepLoremController(
   if (result) {
     const data: FeaturesSendManageKeepLoremData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

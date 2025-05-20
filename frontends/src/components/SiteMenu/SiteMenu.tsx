@@ -7,7 +7,6 @@ import SiteMenuData from "@typings/SiteMenuData";
 function SiteMenu() {
   // variable section - useState [variavel, setter da variavel]
   const [templateData, setTemplateData] = useState<SiteMenuData>({
-    id: 0,
     siteLogo: "",
     option1: "",
     option2: "",

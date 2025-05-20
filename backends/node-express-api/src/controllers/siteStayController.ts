@@ -2,7 +2,7 @@ import SiteStayData from "@typings/SiteStayData";
 import { Request, Response } from "express";
 import knex from "knex";
 
-async function siteStayController(request: Request, response: Response) {
+async function siteStayController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -29,9 +29,9 @@ async function siteStayController(request: Request, response: Response) {
   if (result) {
     const data: SiteStayData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

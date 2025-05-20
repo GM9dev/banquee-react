@@ -2,7 +2,7 @@ import SiteSeemlessData from "@typings/SiteSeemlessData";
 import { Request, Response } from "express";
 import knex from "knex";
 
-async function siteSeemlessController(request: Request, response: Response) {
+async function siteSeemlessController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -28,9 +28,9 @@ async function siteSeemlessController(request: Request, response: Response) {
   if (result) {
     const data: SiteSeemlessData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

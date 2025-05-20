@@ -1,30 +1,54 @@
+import SupportFaqListData from "@typings/SupportFaqListData";
 import { Request, Response } from "express";
+import knex from "knex";
 
-function supportFaqListController(request: Request, response: Response) {
-  response.status(200).json({
-    category: "Categories",
-    option1: "Cards",
-    option2: "Account",
-    option3: "Personal Details",
-    faq1: "Cards",
-    question1: "How to setup my card?",
-    question2: "How do I create a virtual card?",
-    question3: "How to order an extra card?",
-    question4: "My card will exprise soon. What to do?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
-    question5: "How do I freeze my card?",
-    faq2: "Account",
-    question6: "How do I verify my account?",
-    question7: "How to upgrade my account?",
-    question8: "Can I have multiple accounts?",
-    question9: "How do I cancel my account?",
-    faq3: "Personal Details",
-    question10: "How do I change my account address?",
-    question11: "How to close my account?",
-    question12: "Where do I find my tax ID?",
-    question13: "How can I download my bank documents?",
+async function supportFaqListController(req: Request, res: Response) {
+  const dbConn = knex({
+    client: "mysql2",
+    connection: {
+      host: "mysql_banquee",
+      port: 3306,
+      user: "banquee",
+      password: "root",
+      database: "banquee_gesse",
+    },
   });
+
+  const result = await dbConn<SupportFaqListData>("support_faq_lists")
+    .select({
+      id: "id",
+      category: "category",
+      option1: "option_1",
+      option2: "option_2",
+      option3: "option_3",
+      faq1: "faq_1",
+      question1: "question_1",
+      question2: "question_2",
+      question3: "question_3",
+      question4: "question_4",
+      answer: "answer",
+      question5: "question_5",
+      faq2: "faq_2",
+      question6: "question_6",
+      question7: "question_7",
+      question8: "question_8",
+      question9: "question_9",
+      faq3: "faq3",
+      question10: "question_10",
+      question11: "question_11",
+      question12: "question_12",
+      question13: "question_13",
+    })
+    .orderBy("id", "desc")
+    .first();
+
+  if (result) {
+    const data: SupportFaqListData = result;
+
+    res.status(200).json(data);
+  } else {
+    res.status(200).json({});
+  }
 }
 
 export default supportFaqListController;

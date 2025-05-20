@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import SiteFooterData from "@typings/SiteFooterData";
 import knex from "knex";
 
-async function siteFooterController(request: Request, response: Response) {
+async function siteFooterController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -28,9 +28,9 @@ async function siteFooterController(request: Request, response: Response) {
   if (result) {
     const data: SiteFooterData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

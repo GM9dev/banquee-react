@@ -4,7 +4,7 @@ import knex from "knex";
 
 // TODO: query data from database table "site_bankings" and serialize the data
 
-async function siteBankingController(request: Request, response: Response) {
+async function siteBankingController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -16,7 +16,7 @@ async function siteBankingController(request: Request, response: Response) {
     },
   });
 
-  const result = await dbConn<SiteBankingData>("sites_bankings")
+  const result = await dbConn<SiteBankingData>("site_bankings")
     .select({
       id: "id",
       mainTitle: "main_title",
@@ -31,9 +31,9 @@ async function siteBankingController(request: Request, response: Response) {
   if (result) {
     const data: SiteBankingData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 

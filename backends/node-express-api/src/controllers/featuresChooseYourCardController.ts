@@ -2,10 +2,7 @@ import FeaturesChooseYourCardData from "@typings/FeaturesChooseYourCardData";
 import { Request, Response } from "express";
 import knex from "knex";
 
-async function featuresChooseYourCardController(
-  request: Request,
-  response: Response
-) {
+async function featuresChooseYourCardController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -44,9 +41,9 @@ async function featuresChooseYourCardController(
   if (result) {
     const data: FeaturesChooseYourCardData = result;
 
-    response.status(200).json(data);
+    res.status(200).json(data);
   } else {
-    response.status(200).json({});
+    res.status(200).json({});
   }
 }
 
