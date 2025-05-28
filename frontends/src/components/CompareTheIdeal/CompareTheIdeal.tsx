@@ -5,6 +5,7 @@ import CompareTheIdealData from "@typings/CompareTheIdealData";
 
 function CompareTheIdeal() {
   const [templateData, setTemplateData] = useState<CompareTheIdealData>({
+    id: 0,
     info: "",
     title1: "",
     title2: "",

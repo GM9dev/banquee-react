@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 function BlogRelated() {
   const [templateData, setTemplateData] = useState<BlogRelatedData>({
+    id: 0,
     mainTitle: "",
     link: "",
     title1: "",

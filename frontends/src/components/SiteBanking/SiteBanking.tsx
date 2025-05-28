@@ -7,6 +7,7 @@ import SiteBankingData from "@typings/SiteBankingData";
 
 function SiteBanking() {
   const [templateData, setTemplateData] = useState<SiteBankingData>({
+    id: 0,
     mainTitle: "",
     description: "",
     listBenefits: [],

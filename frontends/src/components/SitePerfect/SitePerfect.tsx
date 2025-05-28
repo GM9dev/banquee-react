@@ -5,6 +5,7 @@ import SitePerfectData from "@typings/SitePerfectData";
 
 function SitePerfect() {
   const [templateData, setTemplateData] = useState<SitePerfectData>({
+    id: 0,
     subTitle: "",
     mainTitle: "",
     mainTitle2: "",

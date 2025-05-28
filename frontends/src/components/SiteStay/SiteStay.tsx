@@ -7,6 +7,7 @@ import SiteStayData from "@typings/SiteStayData";
 
 function SiteStay() {
   const [templateData, setTemplateData] = useState<SiteStayData>({
+    id: 0,
     subTitle: "",
     mainTitle: "",
     description: "",

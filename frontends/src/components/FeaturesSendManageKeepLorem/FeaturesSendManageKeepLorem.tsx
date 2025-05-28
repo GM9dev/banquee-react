@@ -10,6 +10,7 @@ import FeaturesSendManageKeepLoremData from "@typings/FeaturesSendManageKeepLore
 function FeaturesSendManageKeepLorem() {
   const [templateData, setTemplateData] =
     useState<FeaturesSendManageKeepLoremData>({
+      id: 0,
       info: "",
       info2: "",
       info3: "",

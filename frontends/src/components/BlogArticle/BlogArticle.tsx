@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 
 function BlogArticle() {
   const [templateData, setTemplateData] = useState<BlogArticleData>({
+    id: 0,
     category: "",
     option1: "",
     option2: "",

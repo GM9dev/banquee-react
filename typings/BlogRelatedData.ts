@@ -1,4 +1,5 @@
 export type BlogRelatedData = {
+  id: number;
   mainTitle: string;
   link: string;
   title1: string;

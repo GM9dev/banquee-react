@@ -8,6 +8,7 @@ import FeaturesChooseYourCardData from "@typings/FeaturesChooseYourCardData";
 
 function FeaturesChooseYourCard() {
   const [templateData, setTemplateData] = useState<FeaturesChooseYourCardData>({
+    id: 0,
     subtTitle: "",
     mainTitle: "",
     mainText1: "",

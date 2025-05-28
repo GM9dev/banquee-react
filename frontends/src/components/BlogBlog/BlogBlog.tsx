@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 function BlogBlog() {
   const [templateData, setTemplateData] = useState<BlogBlogData>({
+    id: 0,
     title: "",
   });
 

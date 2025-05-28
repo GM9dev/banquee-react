@@ -4,6 +4,7 @@ import SiteFooterData from "@typings/SiteFooterData";
 
 function SiteFooter() {
   const [templateData, setTemplateData] = useState<SiteFooterData>({
+    id: 0,
     siteLogo: "",
     boxes: [],
     lastWord1: "",

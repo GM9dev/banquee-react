@@ -1,4 +1,5 @@
 export type ComparePlanData = {
+  id: number;
   plan: string;
   subInfo: string;
   price: string;

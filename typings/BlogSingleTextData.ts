@@ -1,4 +1,5 @@
 export type BlogSingleTextData = {
+  id: number;
   app: string;
   mainTitle: string;
   mainTitle2: string;

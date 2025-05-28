@@ -7,6 +7,7 @@ import SiteOneApp2Data from "@typings/SiteOneApp2Data";
 
 function SiteOneApp2() {
   const [templateData, setTemplateData] = useState<SiteOneApp2Data>({
+    id: 0,
     mainTitle: "",
     description: "",
     listBenefits: [],

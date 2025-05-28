@@ -1,4 +1,5 @@
 export type DropdownBlogLatestData = {
+  id: number;
   category: string;
   option1: string;
   option2: string;

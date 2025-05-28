@@ -5,6 +5,7 @@ import SiteBlogData from "@typings/SiteBlogData";
 
 function SiteBlog() {
   const [templateData, setTemplateData] = useState<SiteBlogData>({
+    id: 0,
     title: "",
     options: "",
     boxes: [],

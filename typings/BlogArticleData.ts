@@ -1,4 +1,5 @@
 export type BlogArticleData = {
+  id: number;
   category: string;
   option1: string;
   option2: string;

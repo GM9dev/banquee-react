@@ -9,6 +9,7 @@ import SiteNeedData from "@typings/SiteNeedData";
 
 function SiteNeed() {
   const [templateData, setTemplateData] = useState<SiteNeedData>({
+    id: 0,
     mainTitle: "",
     contactPhoneNumber: "",
     contactNumber: "",

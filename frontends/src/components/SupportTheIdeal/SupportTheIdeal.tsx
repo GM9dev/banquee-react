@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 function SupportTheIdeal() {
   const [templateData, setTemplateData] = useState<SupportTheIdealData>({
+    id: 0,
     info: "",
     text1: "",
     text2: "",

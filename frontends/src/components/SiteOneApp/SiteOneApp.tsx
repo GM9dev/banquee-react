@@ -6,6 +6,7 @@ import SiteOneAppData from "@typings/SiteOneAppData";
 
 function SiteOneApp() {
   const [templateData, setTemplateData] = useState<SiteOneAppData>({
+    id: 0,
     mainTitle: "",
     appBoxes: [],
   });

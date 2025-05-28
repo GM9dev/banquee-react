@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 function SupportFaqList() {
   const [templateData, setTemplateData] = useState<SupportFaqListData>({
+    id: 0,
     category: "",
     option1: "",
     option2: "",

@@ -6,6 +6,7 @@ import SiteSendData from "@typings/SiteSendData";
 
 function SiteSend() {
   const [templateData, setTemplateData] = useState<SiteSendData>({
+    id: 0,
     mainTitle: "",
     description: "",
     listBenefits: [],

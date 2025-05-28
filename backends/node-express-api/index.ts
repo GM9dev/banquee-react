@@ -6,7 +6,6 @@ import siteOneAppController from "./src/controllers/siteOneAppController";
 import siteSendController from "./src/controllers/siteSendController";
 import siteOrganizeController from "./src/controllers/siteOrganizeController";
 import siteStayController from "./src/controllers/siteStayController";
-import siteSeemlessController from "./src/controllers/siteSeemlessController";
 import sitePerfectController from "./src/controllers/sitePerfectController";
 import sitePeopleController from "./src/controllers/sitePeopleController";
 import siteOneApp2Controller from "./src/controllers/siteOneApp2Controller";
@@ -28,6 +27,7 @@ import blogSingleTextController from "./src/controllers/blogSingleTextController
 import blogRelatedController from "./src/controllers/blogRelatedController";
 import dropdownBlogLatestController from "./src/controllers/dropdownBlogLatestController";
 import dropdownFeaturesCardController from "./src/controllers/dropdownFeaturesCardController";
+import siteSeemlessIntegrationController from "./src/controllers/siteSeemlessIntegrationController";
 
 const server = express();
 
@@ -50,7 +50,7 @@ server.post("/site-one-app", siteOneAppController);
 server.post("/site-send", siteSendController);
 server.post("/site-organize", siteOrganizeController);
 server.post("/site-stay", siteStayController);
-server.post("/site-seemless", siteSeemlessController);
+server.post("/site-seemless-integration", siteSeemlessIntegrationController);
 server.post("/site-perfect", sitePerfectController);
 server.post("/site-people", sitePeopleController);
 server.post("/site-one-app-2", siteOneApp2Controller);

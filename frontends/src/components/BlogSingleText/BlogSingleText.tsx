@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 
 function BlogSingleText() {
   const [templateData, setTemplateData] = useState<BlogSingleTextData>({
+    id: 0,
     app: "",
     mainTitle: "",
     mainTitle2: "",

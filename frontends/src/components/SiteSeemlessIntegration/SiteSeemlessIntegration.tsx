@@ -1,23 +1,29 @@
 import { useEffect, useState } from "react";
 import BadgeImage from "./../../assets/badge.svg";
 import GridImage from "./../../assets/grid.svg";
-import "./SiteSeemless.css";
-import SiteSeemlessData from "@typings/SiteSeemlessData";
+import "./SiteSeemlessIntegration.css";
+import SiteSeemlessIntegrationData from "@typings/SiteSeemlessIntegrationData";
 
-function SiteSeemless() {
-  const [templateData, setTemplateData] = useState<SiteSeemlessData>({
-    subTitle: "",
-    mainTitle: "",
-    description: "",
-    listBenefits: [],
-  });
+function SiteSeemlessIntegration() {
+  const [templateData, setTemplateData] = useState<SiteSeemlessIntegrationData>(
+    {
+      id: 0,
+      subTitle: "",
+      mainTitle: "",
+      description: "",
+      listBenefits: [],
+    }
+  );
 
   async function getServerData() {
-    const request = await fetch("http://localhost:5679/site-seemless", {
-      method: "POST",
-    });
+    const request = await fetch(
+      "http://localhost:5679/site-seemless-integration",
+      {
+        method: "POST",
+      }
+    );
 
-    const response = (await request.json()) as SiteSeemlessData;
+    const response = (await request.json()) as SiteSeemlessIntegrationData;
 
     setTemplateData(response);
   }
@@ -27,7 +33,7 @@ function SiteSeemless() {
   }, []);
 
   return (
-    <div className="SiteSeemless banner-container-160">
+    <div className="SiteSeemlessIntegration banner-container-160">
       <div className="banner-content">
         <section className="image-grid">
           <img className="grid" src={GridImage} />
@@ -56,4 +62,4 @@ function SiteSeemless() {
   );
 }
 
-export default SiteSeemless;
+export default SiteSeemlessIntegration;

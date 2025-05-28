@@ -8,6 +8,7 @@ import FeaturesAllInData from "@typings/FeaturesAllInData";
 
 function FeaturesAllIn() {
   const [templateData, setTemplateData] = useState<FeaturesAllInData>({
+    id: 0,
     info: "",
     mainTitle: "",
     description: "",

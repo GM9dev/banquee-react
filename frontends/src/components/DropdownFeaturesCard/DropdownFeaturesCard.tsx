@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 function DropdownFeaturesCard() {
   const [templateData, setTemplateData] = useState<DropdownFeaturesCardData>({
+    id: 0,
     plan1: "",
     plan2: "",
     plan3: "",

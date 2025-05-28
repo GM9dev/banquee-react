@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 
 function DropdownBlogLatest() {
   const [templateData, setTemplateData] = useState<DropdownBlogLatestData>({
+    id: 0,
     category: "",
     option1: "",
     option2: "",

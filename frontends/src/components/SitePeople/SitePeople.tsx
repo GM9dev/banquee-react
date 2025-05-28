@@ -6,6 +6,7 @@ import SitePeopleData from "@typings/SitePeopleData";
 
 function SitePeople() {
   const [templateData, setTemplateData] = useState<SitePeopleData>({
+    id: 0,
     subTitle: "",
     mainTitle: "",
     info: "",

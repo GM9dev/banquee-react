@@ -6,6 +6,7 @@ import SiteOrganizeData from "@typings/SiteOrganizeData";
 
 function SiteOrganize() {
   const [templateData, setTemplateData] = useState<SiteOrganizeData>({
+    id: 0,
     subTitle: "",
     mainTitle: "",
     description: "",

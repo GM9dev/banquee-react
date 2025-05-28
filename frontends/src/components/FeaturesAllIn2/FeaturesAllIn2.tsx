@@ -11,6 +11,7 @@ import FeaturesAllIn2Data from "@typings/FeaturesAllIn2Data";
 
 function FeaturesAllIn2() {
   const [templateData, setTemplateData] = useState<FeaturesAllIn2Data>({
+    id: 0,
     mainTitle: "",
     mainText: "",
     mainText2: "",

@@ -1,4 +1,5 @@
 export type CompareSupportData = {
+  id: number;
   title: string;
   subTitle: string;
   phone: string;

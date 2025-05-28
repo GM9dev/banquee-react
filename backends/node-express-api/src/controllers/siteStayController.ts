@@ -19,7 +19,7 @@ async function siteStayController(req: Request, res: Response) {
       id: "id",
       subTitle: "sub_title",
       mainTitle: "main_title",
-      description: "option_2",
+      description: "description",
       listBenefits: "list_benefits",
       options: "options",
     })

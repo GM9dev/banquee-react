@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function CompareSupport() {
   const [templateData, setTemplateData] = useState<CompareSupportData>({
+    id: 0,
     title: "",
     subTitle: "",
     phone: "",

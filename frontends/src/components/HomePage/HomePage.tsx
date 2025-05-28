@@ -8,7 +8,7 @@ import SiteOneApp2 from "../SiteOneApp2/SiteOneApp2";
 import SiteOrganize from "../SiteOrganize/SiteOrganize";
 import SitePeople from "../SitePeople/SitePeople";
 import SitePerfect from "../SitePerfect/SitePerfect";
-import SiteSeemless from "../SiteSeemless/SiteSeemless";
+import SiteSeemlessIntegration from "../SiteSeemlessIntegration/SiteSeemlessIntegration";
 import SiteSend from "../SiteSend/SiteSend";
 import SiteStay from "../SiteStay/SiteStay";
 import "./HomePage.css";
@@ -22,7 +22,7 @@ function HomePage() {
       <SiteSend />
       <SiteOrganize />
       <SiteStay />
-      <SiteSeemless />
+      <SiteSeemlessIntegration />
       <SitePerfect />
       <SitePeople />
       <SiteOneApp2 />

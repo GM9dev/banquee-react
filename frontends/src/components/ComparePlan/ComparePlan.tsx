@@ -20,6 +20,7 @@ import ComparePlanData from "@typings/ComparePlanData";
 
 function ComparePlan() {
   const [templateData, setTemplateData] = useState<ComparePlanData>({
+    id: 0,
     plan: "",
     subInfo: "",
     price: "",

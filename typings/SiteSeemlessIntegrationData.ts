@@ -1,4 +1,4 @@
-export type SiteSeemlessData = {
+export type SiteSeemlessIntegrationData = {
   id: number;
   subTitle: string;
   mainTitle: string;
@@ -6,4 +6,4 @@ export type SiteSeemlessData = {
   listBenefits: Array<string>;
 };
 
-export default SiteSeemlessData;
+export default SiteSeemlessIntegrationData;

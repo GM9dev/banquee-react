@@ -1,8 +1,8 @@
-import SiteSeemlessData from "@typings/SiteSeemlessData";
+import SiteSeemlessIntegrationData from "@typings/SiteSeemlessIntegrationData";
 import { Request, Response } from "express";
 import knex from "knex";
 
-async function siteSeemlessController(req: Request, res: Response) {
+async function siteSeemlessIntegrationController(req: Request, res: Response) {
   const dbConn = knex({
     client: "mysql2",
     connection: {
@@ -14,7 +14,9 @@ async function siteSeemlessController(req: Request, res: Response) {
     },
   });
 
-  const result = await dbConn<SiteSeemlessData>("sites_seemless")
+  const result = await dbConn<SiteSeemlessIntegrationData>(
+    "site_seemless_integrations"
+  )
     .select({
       id: "id",
       subTitle: "sub_title",
@@ -26,7 +28,7 @@ async function siteSeemlessController(req: Request, res: Response) {
     .first();
 
   if (result) {
-    const data: SiteSeemlessData = result;
+    const data: SiteSeemlessIntegrationData = result;
 
     res.status(200).json(data);
   } else {
@@ -34,4 +36,4 @@ async function siteSeemlessController(req: Request, res: Response) {
   }
 }
 
-export default siteSeemlessController;
+export default siteSeemlessIntegrationController;

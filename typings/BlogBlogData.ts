@@ -1,4 +1,5 @@
 export type BlogBlogData = {
+  id: number;
   title: string;
 };
 
